@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "PhonePrint Google Forms and CSV Survey Column Mapping Configuration",
+  "version": "1.0.0",
+  "canonical_fields": {
+    "preferred_brand": [
+      "preferred_brand",
+      "What is your preferred smartphone brand?",
+      "Which smartphone brand do you prefer?",
+      "Brand",
+      "Preferred Brand",
+      "Smartphone Brand"
+    ],
+    "budget_range": [
+      "budget_range",
+      "What is your typical smartphone budget range?",
+      "What is your budget range for a new smartphone?",
+      "What is your budget for a smartphone?",
+      "Budget",
+      "Budget Range"
+    ],
+    "preferred_features": [
+      "preferred_features",
+      "Select your top 3 preferred features (Choose exactly 3):",
+      "Which 3 features matter most to you when choosing a smartphone?",
+      "Which 3 features matter most to you?",
+      "Preferred Features",
+      "Features",
+      "Top 3 Features"
+    ],
+    "primary_use": [
+      "primary_use",
+      "What is your primary use case for your smartphone?",
+      "What is your primary use for your smartphone?",
+      "Primary Use",
+      "Primary Use Case"
+    ],
+    "os_preference": [
+      "os_preference",
+      "What is your operating system preference?",
+      "What smartphone operating system do you prefer?",
+      "Operating System Preference",
+      "OS Preference",
+      "OS"
+    ],
+    "response_id": [
+      "response_id",
+      "Response ID",
+      "Respondent ID",
+      "ID"
+    ],
+    "timestamp": [
+      "Timestamp",
+      "timestamp",
+      "Date",
+      "Submitted At"
+    ]
+  },
+  "pii_columns_to_strip": [
+    "Email Address",
+    "email",
+    "Email",
+    "Username",
+    "Name",
+    "Full Name",
+    "Student ID",
+    "Roll Number",
+    "Score",
+    "IP Address"
+  ],
+  "ignored_columns": []
+}

@@ -1,0 +1,115 @@
+@import "katex/dist/katex.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FBFBF9;
+  --foreground: #181715;
+  --surface-paper: #FBFBF9;
+  --surface-card: #FFFFFF;
+  --surface-subtle: #F4F3EE;
+  --surface-border: #E5E3DC;
+  --accent-cobalt: #2563EB;
+  --accent-lime: #65A30D;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  background-image: 
+    linear-gradient(to right, rgba(24, 23, 21, 0.032) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 23, 21, 0.032) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-attachment: fixed;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+/* Custom subtle scrollbar for light editorial theme */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D3D0C7;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A59C;
+}
+
+/* Editorial styling utilities */
+.bg-grid-paper {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(24, 23, 21, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 23, 21, 0.035) 1px, transparent 1px);
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(24, 23, 21, 0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.editorial-line {
+  height: 1px;
+  background-color: #181715;
+}
+
+.editorial-hairline {
+  height: 1px;
+  background-color: #E5E3DC;
+}
+
+.editorial-double-line {
+  border-top: 1px solid #181715;
+  border-bottom: 1px solid #181715;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+/* Drafting crosshair ornament */
+.crosshair-corner {
+  position: relative;
+}
+.crosshair-corner::before {
+  content: "+";
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  font-family: monospace;
+  font-size: 11px;
+  color: #9CA3AF;
+  pointer-events: none;
+}
+.crosshair-corner::after {
+  content: "+";
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  font-family: monospace;
+  font-size: 11px;
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+/* Monospace tag bracket styling */
+.editorial-bracket {
+  letter-spacing: 0.05em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

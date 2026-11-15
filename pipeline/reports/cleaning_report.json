@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-11-12T16:43:27.556710+00:00",
+  "input_file": "C:\\Users\\sukhi\\AppData\\Local\\Temp\\tmphq7kwcl2.csv",
+  "is_demo": false,
+  "total_raw_rows": 1,
+  "blank_rows": 0,
+  "evaluated_rows": 1,
+  "accepted_records": 1,
+  "rejected_records": 0,
+  "invariant_satisfied": true,
+  "exact_duplicates_count": 0,
+  "identical_profiles_retained": 0,
+  "unknown_brands_count": 0,
+  "unknown_budgets_count": 0,
+  "invalid_features_count": 0,
+  "missing_fields_count": 0,
+  "duplicate_id_count": 0,
+  "pii_columns_stripped": [],
+  "record_level_errors": [],
+  "duplicate_audit_log": []
+}

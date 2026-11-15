@@ -1,0 +1,301 @@
+respondent_id,preferred_brand,budget_range,feature_1,feature_2,feature_3,primary_use,os_preference,submission_timestamp
+RESP_001,Apple,"Above ₹60,000",Display Quality,Camera Quality,Storage Capacity,Photography & Videography,iOS,2026-09-15T09:00:00Z
+RESP_002,Apple,"Above ₹60,000",Display Quality,Battery Life,Camera Quality,Photography & Videography,iOS,2026-09-15T16:48:33Z
+RESP_003,Samsung,"Above ₹60,000",Processing Performance,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-09-15T20:18:30Z
+RESP_004,Samsung,"₹15,000 - ₹30,000",Battery Life,Storage Capacity,Camera Quality,Photography & Videography,Android,2026-09-15T23:31:34Z
+RESP_005,Xiaomi,"₹15,000 - ₹30,000",Processing Performance,Display Quality,Battery Life,Gaming,Android,2026-09-16T02:51:00Z
+RESP_006,Motorola,"Under ₹15,000",Storage Capacity,Battery Life,Display Quality,Everyday General Use,Android,2026-09-16T05:28:54Z
+RESP_007,Apple,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Processing Performance,Everyday General Use,iOS,2026-09-16T05:05:04Z
+RESP_008,Google,"₹30,000 - ₹60,000",Camera Quality,Battery Life,Build & Design Quality,Photography & Videography,iOS,2026-09-16T13:49:11Z
+RESP_009,Apple,"₹15,000 - ₹30,000",Battery Life,Software & OS Experience,Display Quality,Business & Productivity,iOS,2026-09-16T11:16:48Z
+RESP_010,Xiaomi,"₹15,000 - ₹30,000",Camera Quality,Processing Performance,Battery Life,Gaming,Android,2026-09-16T17:29:37Z
+RESP_011,OnePlus,"₹30,000 - ₹60,000",Battery Life,Display Quality,Processing Performance,Everyday General Use,iOS,2026-09-16T18:55:22Z
+RESP_012,Samsung,"₹15,000 - ₹30,000",Processing Performance,Storage Capacity,Display Quality,Everyday General Use,Android,2026-09-16T23:13:30Z
+RESP_013,Samsung,"Under ₹15,000",Battery Life,Display Quality,Storage Capacity,Social Media & Content Consumption,Android,2026-09-16T23:45:31Z
+RESP_014,Google,"₹15,000 - ₹30,000",Processing Performance,Camera Quality,Battery Life,Business & Productivity,Android,2026-09-17T05:14:14Z
+RESP_015,OnePlus,"₹30,000 - ₹60,000",Display Quality,Battery Life,Processing Performance,Gaming,Android,2026-09-17T10:06:27Z
+RESP_016,Apple,"₹30,000 - ₹60,000",Display Quality,Processing Performance,Camera Quality,Social Media & Content Consumption,iOS,2026-09-17T09:13:46Z
+RESP_017,Apple,"Above ₹60,000",Camera Quality,Processing Performance,Display Quality,Gaming,No Preference,2026-09-17T14:35:28Z
+RESP_018,Samsung,"₹30,000 - ₹60,000",Camera Quality,Storage Capacity,Battery Life,Everyday General Use,Android,2026-09-17T16:18:20Z
+RESP_019,OnePlus,"₹15,000 - ₹30,000",Battery Life,Software & OS Experience,Processing Performance,Business & Productivity,Android,2026-09-17T18:48:16Z
+RESP_020,Samsung,"₹15,000 - ₹30,000",Camera Quality,Processing Performance,Storage Capacity,Photography & Videography,Android,2026-09-17T21:49:26Z
+RESP_021,Other,"Under ₹15,000",Processing Performance,Battery Life,Camera Quality,Photography & Videography,Android,2026-09-18T02:17:04Z
+RESP_022,Apple,"Above ₹60,000",Camera Quality,Processing Performance,Build & Design Quality,Gaming,iOS,2026-09-18T04:40:58Z
+RESP_023,Xiaomi,"₹15,000 - ₹30,000",Processing Performance,Display Quality,Camera Quality,Photography & Videography,Android,2026-09-18T12:31:21Z
+RESP_024,Google,"₹15,000 - ₹30,000",Battery Life,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-09-18T15:33:22Z
+RESP_025,Google,"₹15,000 - ₹30,000",Software & OS Experience,Storage Capacity,Battery Life,Business & Productivity,Android,2026-09-18T14:03:16Z
+RESP_026,Apple,"Above ₹60,000",Camera Quality,Processing Performance,Display Quality,Photography & Videography,iOS,2026-09-18T22:00:15Z
+RESP_027,Google,"₹15,000 - ₹30,000",Battery Life,Storage Capacity,Processing Performance,Gaming,Android,2026-09-18T22:22:47Z
+RESP_028,Apple,"₹30,000 - ₹60,000",Processing Performance,Display Quality,Battery Life,Gaming,iOS,2026-09-19T01:10:37Z
+RESP_029,Xiaomi,"₹15,000 - ₹30,000",Storage Capacity,Camera Quality,Build & Design Quality,Photography & Videography,No Preference,2026-09-19T08:09:13Z
+RESP_030,Apple,"₹30,000 - ₹60,000",Processing Performance,Display Quality,Build & Design Quality,Social Media & Content Consumption,iOS,2026-09-19T08:40:59Z
+RESP_031,Samsung,"₹30,000 - ₹60,000",Battery Life,Processing Performance,Camera Quality,Gaming,Android,2026-09-19T15:20:33Z
+RESP_032,Samsung,"Under ₹15,000",Battery Life,Storage Capacity,Software & OS Experience,Everyday General Use,Android,2026-09-19T18:37:30Z
+RESP_033,Motorola,"₹15,000 - ₹30,000",Software & OS Experience,Storage Capacity,Battery Life,Everyday General Use,Android,2026-09-19T17:33:39Z
+RESP_034,Samsung,"₹15,000 - ₹30,000",Camera Quality,Processing Performance,Build & Design Quality,Gaming,No Preference,2026-09-19T23:51:55Z
+RESP_035,Apple,"Above ₹60,000",Processing Performance,Battery Life,Display Quality,Gaming,iOS,2026-09-19T22:23:44Z
+RESP_036,Apple,"Above ₹60,000",Camera Quality,Storage Capacity,Processing Performance,Photography & Videography,iOS,2026-09-20T07:15:20Z
+RESP_037,Samsung,"₹15,000 - ₹30,000",Camera Quality,Storage Capacity,Processing Performance,Gaming,Android,2026-09-20T07:12:23Z
+RESP_038,Apple,"Above ₹60,000",Software & OS Experience,Storage Capacity,Processing Performance,Gaming,No Preference,2026-09-20T10:06:00Z
+RESP_039,Apple,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Software & OS Experience,Photography & Videography,iOS,2026-09-20T13:11:49Z
+RESP_040,Samsung,"₹15,000 - ₹30,000",Battery Life,Camera Quality,Processing Performance,Photography & Videography,Android,2026-09-20T16:17:05Z
+RESP_041,Samsung,"₹30,000 - ₹60,000",Processing Performance,Software & OS Experience,Battery Life,Everyday General Use,Android,2026-09-20T21:58:18Z
+RESP_042,Google,"Above ₹60,000",Battery Life,Display Quality,Camera Quality,Everyday General Use,Android,2026-09-20T20:41:45Z
+RESP_043,Google,"₹15,000 - ₹30,000",Software & OS Experience,Camera Quality,Battery Life,Photography & Videography,iOS,2026-09-21T01:36:45Z
+RESP_044,Apple,"₹30,000 - ₹60,000",Camera Quality,Display Quality,Processing Performance,Gaming,iOS,2026-09-21T04:26:28Z
+RESP_045,Apple,"₹15,000 - ₹30,000",Storage Capacity,Display Quality,Software & OS Experience,Social Media & Content Consumption,iOS,2026-09-21T09:08:05Z
+RESP_046,Google,"₹15,000 - ₹30,000",Software & OS Experience,Camera Quality,Processing Performance,Gaming,Android,2026-09-21T14:03:02Z
+RESP_047,Apple,"Above ₹60,000",Camera Quality,Software & OS Experience,Build & Design Quality,Photography & Videography,iOS,2026-09-21T16:52:43Z
+RESP_048,Google,"₹15,000 - ₹30,000",Camera Quality,Battery Life,Software & OS Experience,Social Media & Content Consumption,No Preference,2026-09-21T20:09:49Z
+RESP_049,Samsung,"Above ₹60,000",Processing Performance,Storage Capacity,Camera Quality,Gaming,Android,2026-09-21T21:17:39Z
+RESP_050,Samsung,"Above ₹60,000",Battery Life,Processing Performance,Display Quality,Social Media & Content Consumption,Android,2026-09-21T23:24:03Z
+RESP_051,Samsung,"Above ₹60,000",Display Quality,Software & OS Experience,Battery Life,Everyday General Use,Android,2026-09-22T06:18:23Z
+RESP_052,Apple,"₹15,000 - ₹30,000",Display Quality,Storage Capacity,Battery Life,Everyday General Use,No Preference,2026-09-22T06:55:42Z
+RESP_053,Google,"₹15,000 - ₹30,000",Software & OS Experience,Battery Life,Camera Quality,Everyday General Use,Android,2026-09-22T07:49:34Z
+RESP_054,Samsung,"₹30,000 - ₹60,000",Display Quality,Battery Life,Build & Design Quality,Photography & Videography,Android,2026-09-22T14:14:04Z
+RESP_055,OnePlus,"Under ₹15,000",Display Quality,Camera Quality,Battery Life,Photography & Videography,Android,2026-09-22T19:38:03Z
+RESP_056,Samsung,"₹15,000 - ₹30,000",Display Quality,Storage Capacity,Camera Quality,Photography & Videography,Android,2026-09-22T20:27:40Z
+RESP_057,Apple,"₹30,000 - ₹60,000",Build & Design Quality,Battery Life,Camera Quality,Photography & Videography,iOS,2026-09-22T21:50:00Z
+RESP_058,OnePlus,"Under ₹15,000",Build & Design Quality,Battery Life,Processing Performance,Gaming,Android,2026-09-23T01:54:23Z
+RESP_059,Samsung,"₹15,000 - ₹30,000",Processing Performance,Storage Capacity,Battery Life,Gaming,Android,2026-09-23T07:44:11Z
+RESP_060,Apple,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Software & OS Experience,Photography & Videography,iOS,2026-09-23T08:52:49Z
+RESP_061,Samsung,"₹30,000 - ₹60,000",Camera Quality,Storage Capacity,Processing Performance,Gaming,Android,2026-09-23T12:25:43Z
+RESP_062,Samsung,"Under ₹15,000",Camera Quality,Display Quality,Battery Life,Everyday General Use,No Preference,2026-09-23T15:28:42Z
+RESP_063,Apple,"₹30,000 - ₹60,000",Camera Quality,Software & OS Experience,Battery Life,Photography & Videography,iOS,2026-09-23T17:47:11Z
+RESP_064,Samsung,"₹15,000 - ₹30,000",Display Quality,Storage Capacity,Processing Performance,Gaming,Android,2026-09-24T00:45:30Z
+RESP_065,Google,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Software & OS Experience,Photography & Videography,Android,2026-09-23T23:42:57Z
+RESP_066,Google,"₹30,000 - ₹60,000",Software & OS Experience,Battery Life,Camera Quality,Business & Productivity,Android,2026-09-24T02:56:54Z
+RESP_067,Samsung,"₹15,000 - ₹30,000",Camera Quality,Battery Life,Storage Capacity,Photography & Videography,No Preference,2026-09-24T05:42:44Z
+RESP_068,Samsung,"₹15,000 - ₹30,000",Camera Quality,Battery Life,Storage Capacity,Everyday General Use,Android,2026-09-24T09:18:35Z
+RESP_069,Xiaomi,"₹30,000 - ₹60,000",Storage Capacity,Processing Performance,Battery Life,Gaming,Android,2026-09-24T14:04:55Z
+RESP_070,Motorola,"Under ₹15,000",Storage Capacity,Software & OS Experience,Display Quality,Everyday General Use,Android,2026-09-24T18:37:35Z
+RESP_071,Samsung,"Under ₹15,000",Display Quality,Battery Life,Storage Capacity,Gaming,Android,2026-09-24T18:24:18Z
+RESP_072,Motorola,"Under ₹15,000",Build & Design Quality,Battery Life,Software & OS Experience,Gaming,Android,2026-09-25T01:28:25Z
+RESP_073,Google,"₹15,000 - ₹30,000",Software & OS Experience,Display Quality,Storage Capacity,Business & Productivity,Android,2026-09-25T04:20:12Z
+RESP_074,Apple,"₹30,000 - ₹60,000",Processing Performance,Camera Quality,Display Quality,Everyday General Use,iOS,2026-09-25T06:55:14Z
+RESP_075,Apple,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Display Quality,Photography & Videography,iOS,2026-09-25T08:45:40Z
+RESP_076,OnePlus,"Under ₹15,000",Battery Life,Camera Quality,Processing Performance,Gaming,Android,2026-09-25T12:13:47Z
+RESP_077,OnePlus,"₹30,000 - ₹60,000",Storage Capacity,Display Quality,Processing Performance,Gaming,Android,2026-09-25T16:59:04Z
+RESP_078,OnePlus,"₹15,000 - ₹30,000",Storage Capacity,Battery Life,Processing Performance,Gaming,Android,2026-09-25T21:19:49Z
+RESP_079,Google,"Under ₹15,000",Software & OS Experience,Storage Capacity,Battery Life,Everyday General Use,Android,2026-09-25T20:14:53Z
+RESP_080,Apple,"₹15,000 - ₹30,000",Camera Quality,Software & OS Experience,Storage Capacity,Gaming,iOS,2026-09-25T23:43:46Z
+RESP_081,Samsung,"₹15,000 - ₹30,000",Battery Life,Camera Quality,Storage Capacity,Photography & Videography,Android,2026-09-26T05:30:24Z
+RESP_082,Samsung,"Above ₹60,000",Build & Design Quality,Camera Quality,Processing Performance,Photography & Videography,No Preference,2026-09-26T08:01:20Z
+RESP_083,Samsung,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Display Quality,Gaming,Android,2026-09-26T09:02:59Z
+RESP_084,Samsung,"₹30,000 - ₹60,000",Camera Quality,Build & Design Quality,Display Quality,Photography & Videography,Android,2026-09-26T10:55:45Z
+RESP_085,Xiaomi,"Under ₹15,000",Display Quality,Processing Performance,Battery Life,Everyday General Use,Android,2026-09-26T14:09:21Z
+RESP_086,Other,"Under ₹15,000",Storage Capacity,Battery Life,Build & Design Quality,Photography & Videography,Android,2026-09-26T21:52:08Z
+RESP_087,Xiaomi,"₹30,000 - ₹60,000",Camera Quality,Battery Life,Storage Capacity,Photography & Videography,No Preference,2026-09-26T20:49:49Z
+RESP_088,Samsung,"₹30,000 - ₹60,000",Battery Life,Processing Performance,Build & Design Quality,Gaming,Android,2026-09-27T00:05:37Z
+RESP_089,Apple,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Software & OS Experience,Business & Productivity,iOS,2026-09-27T05:31:39Z
+RESP_090,Google,"Under ₹15,000",Display Quality,Build & Design Quality,Storage Capacity,Social Media & Content Consumption,Android,2026-09-27T09:13:01Z
+RESP_091,Apple,"₹30,000 - ₹60,000",Camera Quality,Display Quality,Build & Design Quality,Gaming,iOS,2026-09-27T11:48:03Z
+RESP_092,Apple,"₹15,000 - ₹30,000",Camera Quality,Storage Capacity,Processing Performance,Photography & Videography,iOS,2026-09-27T13:32:12Z
+RESP_093,Apple,"Above ₹60,000",Battery Life,Camera Quality,Display Quality,Photography & Videography,iOS,2026-09-27T16:34:48Z
+RESP_094,Xiaomi,"Under ₹15,000",Storage Capacity,Display Quality,Processing Performance,Gaming,Android,2026-09-27T23:46:36Z
+RESP_095,OnePlus,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Display Quality,Photography & Videography,Android,2026-09-27T22:45:39Z
+RESP_096,Google,"₹30,000 - ₹60,000",Camera Quality,Build & Design Quality,Battery Life,Everyday General Use,Android,2026-09-28T07:27:10Z
+RESP_097,OnePlus,"₹15,000 - ₹30,000",Display Quality,Storage Capacity,Processing Performance,Gaming,No Preference,2026-09-28T10:02:27Z
+RESP_098,Google,"Under ₹15,000",Camera Quality,Processing Performance,Battery Life,Photography & Videography,Android,2026-09-28T09:56:21Z
+RESP_099,Motorola,"Under ₹15,000",Battery Life,Storage Capacity,Display Quality,Business & Productivity,Android,2026-09-28T13:34:53Z
+RESP_100,Xiaomi,"Under ₹15,000",Battery Life,Storage Capacity,Build & Design Quality,Everyday General Use,Android,2026-09-28T18:59:34Z
+RESP_101,Google,"₹15,000 - ₹30,000",Display Quality,Camera Quality,Processing Performance,Photography & Videography,Android,2026-09-28T18:39:16Z
+RESP_102,Google,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Battery Life,Photography & Videography,Android,2026-09-29T00:03:32Z
+RESP_103,OnePlus,"₹15,000 - ₹30,000",Battery Life,Build & Design Quality,Camera Quality,Photography & Videography,Android,2026-09-29T04:21:24Z
+RESP_104,Google,"₹30,000 - ₹60,000",Display Quality,Software & OS Experience,Battery Life,Photography & Videography,Android,2026-09-29T08:30:46Z
+RESP_105,Samsung,"Above ₹60,000",Battery Life,Storage Capacity,Camera Quality,Everyday General Use,Android,2026-09-29T07:03:54Z
+RESP_106,Apple,"Above ₹60,000",Camera Quality,Build & Design Quality,Battery Life,Photography & Videography,No Preference,2026-09-29T10:25:38Z
+RESP_107,Motorola,"₹15,000 - ₹30,000",Camera Quality,Display Quality,Storage Capacity,Social Media & Content Consumption,Android,2026-09-29T14:16:46Z
+RESP_108,Other,"Under ₹15,000",Build & Design Quality,Storage Capacity,Camera Quality,Photography & Videography,Android,2026-09-29T21:17:58Z
+RESP_109,Apple,"Above ₹60,000",Processing Performance,Software & OS Experience,Display Quality,Gaming,iOS,2026-09-29T23:25:42Z
+RESP_110,Samsung,"₹30,000 - ₹60,000",Battery Life,Display Quality,Camera Quality,Photography & Videography,Android,2026-09-30T03:49:31Z
+RESP_111,Samsung,"Under ₹15,000",Battery Life,Storage Capacity,Processing Performance,Everyday General Use,Android,2026-09-30T02:35:50Z
+RESP_112,Apple,"₹15,000 - ₹30,000",Display Quality,Build & Design Quality,Camera Quality,Photography & Videography,iOS,2026-09-30T06:28:24Z
+RESP_113,Apple,"₹30,000 - ₹60,000",Processing Performance,Camera Quality,Battery Life,Gaming,iOS,2026-09-30T10:23:39Z
+RESP_114,Samsung,"₹15,000 - ₹30,000",Storage Capacity,Camera Quality,Display Quality,Photography & Videography,Android,2026-09-30T12:10:01Z
+RESP_115,Google,"₹15,000 - ₹30,000",Software & OS Experience,Battery Life,Storage Capacity,Everyday General Use,Android,2026-09-30T17:50:39Z
+RESP_116,Apple,"Above ₹60,000",Display Quality,Battery Life,Processing Performance,Everyday General Use,iOS,2026-09-30T21:41:15Z
+RESP_117,Google,"₹15,000 - ₹30,000",Display Quality,Battery Life,Camera Quality,Photography & Videography,Android,2026-10-01T01:13:53Z
+RESP_118,Samsung,"₹30,000 - ₹60,000",Storage Capacity,Processing Performance,Display Quality,Gaming,Android,2026-10-01T05:50:28Z
+RESP_119,Samsung,"Under ₹15,000",Display Quality,Storage Capacity,Battery Life,Everyday General Use,Android,2026-10-01T03:31:26Z
+RESP_120,Apple,"Above ₹60,000",Camera Quality,Display Quality,Storage Capacity,Photography & Videography,iOS,2026-10-01T11:37:00Z
+RESP_121,Apple,"₹30,000 - ₹60,000",Camera Quality,Display Quality,Storage Capacity,Social Media & Content Consumption,iOS,2026-10-01T14:08:56Z
+RESP_122,Samsung,"Above ₹60,000",Processing Performance,Camera Quality,Display Quality,Gaming,Android,2026-10-01T14:01:08Z
+RESP_123,Samsung,"Under ₹15,000",Processing Performance,Battery Life,Display Quality,Gaming,Android,2026-10-01T18:11:13Z
+RESP_124,Google,"₹15,000 - ₹30,000",Battery Life,Camera Quality,Software & OS Experience,Everyday General Use,Android,2026-10-01T19:42:05Z
+RESP_125,Apple,"₹15,000 - ₹30,000",Build & Design Quality,Camera Quality,Software & OS Experience,Gaming,iOS,2026-10-02T01:50:04Z
+RESP_126,Samsung,"Under ₹15,000",Display Quality,Storage Capacity,Software & OS Experience,Social Media & Content Consumption,Android,2026-10-02T04:27:48Z
+RESP_127,Apple,"Above ₹60,000",Camera Quality,Battery Life,Software & OS Experience,Photography & Videography,iOS,2026-10-02T09:50:31Z
+RESP_128,Apple,"₹15,000 - ₹30,000",Storage Capacity,Camera Quality,Battery Life,Everyday General Use,iOS,2026-10-02T11:04:30Z
+RESP_129,Google,"Under ₹15,000",Camera Quality,Battery Life,Build & Design Quality,Photography & Videography,Android,2026-10-02T15:30:12Z
+RESP_130,Apple,"₹15,000 - ₹30,000",Storage Capacity,Camera Quality,Display Quality,Everyday General Use,iOS,2026-10-02T18:21:28Z
+RESP_131,Xiaomi,"Under ₹15,000",Processing Performance,Display Quality,Storage Capacity,Everyday General Use,Android,2026-10-02T22:24:47Z
+RESP_132,Apple,"₹30,000 - ₹60,000",Software & OS Experience,Storage Capacity,Build & Design Quality,Social Media & Content Consumption,iOS,2026-10-03T02:04:58Z
+RESP_133,Apple,"Above ₹60,000",Processing Performance,Camera Quality,Battery Life,Photography & Videography,iOS,2026-10-03T05:00:23Z
+RESP_134,Samsung,"₹15,000 - ₹30,000",Battery Life,Display Quality,Camera Quality,Social Media & Content Consumption,Android,2026-10-03T06:40:52Z
+RESP_135,Apple,"₹30,000 - ₹60,000",Battery Life,Display Quality,Storage Capacity,Social Media & Content Consumption,No Preference,2026-10-03T08:37:08Z
+RESP_136,Samsung,"₹30,000 - ₹60,000",Software & OS Experience,Storage Capacity,Processing Performance,Business & Productivity,No Preference,2026-10-03T11:50:34Z
+RESP_137,OnePlus,"₹15,000 - ₹30,000",Processing Performance,Software & OS Experience,Display Quality,Gaming,Android,2026-10-03T13:22:34Z
+RESP_138,Samsung,"₹30,000 - ₹60,000",Battery Life,Processing Performance,Display Quality,Gaming,Android,2026-10-03T20:21:01Z
+RESP_139,Xiaomi,"₹15,000 - ₹30,000",Processing Performance,Software & OS Experience,Storage Capacity,Gaming,Android,2026-10-03T20:37:43Z
+RESP_140,Xiaomi,"₹15,000 - ₹30,000",Display Quality,Storage Capacity,Build & Design Quality,Social Media & Content Consumption,Android,2026-10-04T01:53:44Z
+RESP_141,Apple,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Build & Design Quality,Everyday General Use,iOS,2026-10-04T06:26:15Z
+RESP_142,Google,"Above ₹60,000",Processing Performance,Camera Quality,Battery Life,Gaming,Android,2026-10-04T05:44:52Z
+RESP_143,Google,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Battery Life,Photography & Videography,Android,2026-10-04T13:49:56Z
+RESP_144,Samsung,"₹30,000 - ₹60,000",Storage Capacity,Display Quality,Battery Life,Gaming,Android,2026-10-04T15:39:29Z
+RESP_145,Apple,"₹15,000 - ₹30,000",Processing Performance,Camera Quality,Battery Life,Everyday General Use,iOS,2026-10-04T15:36:29Z
+RESP_146,Samsung,"₹30,000 - ₹60,000",Camera Quality,Software & OS Experience,Battery Life,Everyday General Use,Android,2026-10-04T17:28:21Z
+RESP_147,Samsung,"₹15,000 - ₹30,000",Build & Design Quality,Battery Life,Software & OS Experience,Everyday General Use,Android,2026-10-05T01:38:04Z
+RESP_148,Apple,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Processing Performance,Gaming,iOS,2026-10-05T04:49:34Z
+RESP_149,Xiaomi,"Under ₹15,000",Storage Capacity,Battery Life,Display Quality,Social Media & Content Consumption,Android,2026-10-05T06:46:52Z
+RESP_150,OnePlus,"₹15,000 - ₹30,000",Display Quality,Camera Quality,Storage Capacity,Social Media & Content Consumption,Android,2026-10-05T06:51:42Z
+RESP_151,Samsung,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Battery Life,Photography & Videography,Android,2026-10-05T14:00:29Z
+RESP_152,Apple,"Above ₹60,000",Battery Life,Build & Design Quality,Camera Quality,Photography & Videography,iOS,2026-10-05T14:07:38Z
+RESP_153,Apple,"Under ₹15,000",Battery Life,Camera Quality,Processing Performance,Photography & Videography,iOS,2026-10-05T21:07:19Z
+RESP_154,Google,"₹15,000 - ₹30,000",Display Quality,Storage Capacity,Build & Design Quality,Gaming,Android,2026-10-05T20:50:39Z
+RESP_155,Samsung,"₹30,000 - ₹60,000",Display Quality,Storage Capacity,Battery Life,Social Media & Content Consumption,Android,2026-10-06T01:30:33Z
+RESP_156,Apple,"₹30,000 - ₹60,000",Camera Quality,Software & OS Experience,Battery Life,Everyday General Use,iOS,2026-10-06T01:15:39Z
+RESP_157,Google,"Above ₹60,000",Battery Life,Software & OS Experience,Camera Quality,Photography & Videography,No Preference,2026-10-06T05:09:49Z
+RESP_158,Apple,"Above ₹60,000",Camera Quality,Battery Life,Build & Design Quality,Photography & Videography,iOS,2026-10-06T10:38:27Z
+RESP_159,Samsung,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Build & Design Quality,Everyday General Use,Android,2026-10-06T14:17:26Z
+RESP_160,Samsung,"₹15,000 - ₹30,000",Processing Performance,Build & Design Quality,Display Quality,Gaming,Android,2026-10-06T15:01:54Z
+RESP_161,Google,"Above ₹60,000",Build & Design Quality,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-10-06T17:35:51Z
+RESP_162,Apple,"Above ₹60,000",Battery Life,Camera Quality,Display Quality,Business & Productivity,iOS,2026-10-06T22:09:41Z
+RESP_163,Apple,"Under ₹15,000",Camera Quality,Processing Performance,Display Quality,Photography & Videography,iOS,2026-10-07T04:01:28Z
+RESP_164,Samsung,"₹15,000 - ₹30,000",Storage Capacity,Processing Performance,Build & Design Quality,Gaming,No Preference,2026-10-07T07:29:23Z
+RESP_165,Apple,"₹15,000 - ₹30,000",Battery Life,Storage Capacity,Build & Design Quality,Everyday General Use,iOS,2026-10-07T07:35:34Z
+RESP_166,Samsung,"Above ₹60,000",Build & Design Quality,Software & OS Experience,Processing Performance,Gaming,Android,2026-10-07T13:53:09Z
+RESP_167,Apple,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Software & OS Experience,Photography & Videography,iOS,2026-10-07T15:57:47Z
+RESP_168,Apple,"₹15,000 - ₹30,000",Battery Life,Storage Capacity,Display Quality,Everyday General Use,iOS,2026-10-07T18:27:39Z
+RESP_169,Samsung,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Processing Performance,Photography & Videography,Android,2026-10-07T18:44:17Z
+RESP_170,Apple,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Battery Life,Photography & Videography,iOS,2026-10-08T00:09:21Z
+RESP_171,Google,"₹15,000 - ₹30,000",Camera Quality,Processing Performance,Storage Capacity,Gaming,Android,2026-10-08T07:24:05Z
+RESP_172,Samsung,"Above ₹60,000",Processing Performance,Storage Capacity,Camera Quality,Everyday General Use,Android,2026-10-08T06:59:42Z
+RESP_173,Samsung,"₹30,000 - ₹60,000",Battery Life,Storage Capacity,Display Quality,Everyday General Use,No Preference,2026-10-08T08:17:15Z
+RESP_174,Google,"₹30,000 - ₹60,000",Camera Quality,Battery Life,Build & Design Quality,Business & Productivity,Android,2026-10-08T11:20:09Z
+RESP_175,Google,"₹15,000 - ₹30,000",Software & OS Experience,Build & Design Quality,Battery Life,Everyday General Use,No Preference,2026-10-08T18:23:55Z
+RESP_176,Apple,"Above ₹60,000",Build & Design Quality,Software & OS Experience,Processing Performance,Gaming,No Preference,2026-10-08T17:20:45Z
+RESP_177,Apple,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Build & Design Quality,Photography & Videography,iOS,2026-10-09T00:03:19Z
+RESP_178,Xiaomi,"Under ₹15,000",Battery Life,Software & OS Experience,Camera Quality,Everyday General Use,Android,2026-10-09T04:32:25Z
+RESP_179,Samsung,"₹15,000 - ₹30,000",Battery Life,Processing Performance,Camera Quality,Photography & Videography,Android,2026-10-09T03:23:45Z
+RESP_180,Apple,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Software & OS Experience,Photography & Videography,iOS,2026-10-09T11:22:49Z
+RESP_181,Apple,"Above ₹60,000",Build & Design Quality,Storage Capacity,Battery Life,Gaming,iOS,2026-10-09T12:55:24Z
+RESP_182,Apple,"₹30,000 - ₹60,000",Build & Design Quality,Battery Life,Storage Capacity,Photography & Videography,iOS,2026-10-09T17:18:17Z
+RESP_183,Apple,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Build & Design Quality,Social Media & Content Consumption,iOS,2026-10-09T15:56:26Z
+RESP_184,Other,"Under ₹15,000",Camera Quality,Display Quality,Battery Life,Everyday General Use,Android,2026-10-10T00:48:15Z
+RESP_185,OnePlus,"₹15,000 - ₹30,000",Camera Quality,Battery Life,Processing Performance,Photography & Videography,Android,2026-10-10T01:32:09Z
+RESP_186,Apple,"₹15,000 - ₹30,000",Build & Design Quality,Camera Quality,Battery Life,Photography & Videography,iOS,2026-10-10T04:06:39Z
+RESP_187,Samsung,"₹15,000 - ₹30,000",Display Quality,Processing Performance,Camera Quality,Everyday General Use,Android,2026-10-10T10:05:43Z
+RESP_188,Apple,"Above ₹60,000",Camera Quality,Storage Capacity,Display Quality,Everyday General Use,No Preference,2026-10-10T09:04:02Z
+RESP_189,Apple,"Above ₹60,000",Camera Quality,Software & OS Experience,Build & Design Quality,Photography & Videography,No Preference,2026-10-10T11:36:33Z
+RESP_190,Samsung,"Under ₹15,000",Camera Quality,Battery Life,Storage Capacity,Photography & Videography,Android,2026-10-10T14:38:51Z
+RESP_191,Apple,"Above ₹60,000",Battery Life,Display Quality,Storage Capacity,Everyday General Use,iOS,2026-10-10T19:59:10Z
+RESP_192,Samsung,"₹15,000 - ₹30,000",Software & OS Experience,Battery Life,Processing Performance,Everyday General Use,Android,2026-10-11T01:41:42Z
+RESP_193,Apple,"Above ₹60,000",Camera Quality,Processing Performance,Software & OS Experience,Photography & Videography,iOS,2026-10-10T23:45:52Z
+RESP_194,Samsung,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Processing Performance,Photography & Videography,Android,2026-10-11T02:32:38Z
+RESP_195,Samsung,"Above ₹60,000",Display Quality,Storage Capacity,Processing Performance,Social Media & Content Consumption,Android,2026-10-11T10:54:12Z
+RESP_196,Samsung,"₹30,000 - ₹60,000",Camera Quality,Battery Life,Processing Performance,Photography & Videography,No Preference,2026-10-11T14:10:06Z
+RESP_197,Apple,"₹15,000 - ₹30,000",Storage Capacity,Processing Performance,Build & Design Quality,Gaming,iOS,2026-10-11T12:14:05Z
+RESP_198,Other,"Under ₹15,000",Processing Performance,Battery Life,Storage Capacity,Everyday General Use,Android,2026-10-11T19:25:13Z
+RESP_199,Apple,"Above ₹60,000",Processing Performance,Build & Design Quality,Camera Quality,Photography & Videography,iOS,2026-10-11T18:54:37Z
+RESP_200,Google,"₹30,000 - ₹60,000",Processing Performance,Camera Quality,Battery Life,Photography & Videography,Android,2026-10-12T03:11:08Z
+RESP_201,Google,"₹30,000 - ₹60,000",Software & OS Experience,Camera Quality,Build & Design Quality,Business & Productivity,Android,2026-10-12T02:24:46Z
+RESP_202,OnePlus,"₹15,000 - ₹30,000",Build & Design Quality,Processing Performance,Camera Quality,Everyday General Use,Android,2026-10-12T05:22:49Z
+RESP_203,Apple,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Display Quality,Gaming,iOS,2026-10-12T10:35:26Z
+RESP_204,Samsung,"Above ₹60,000",Battery Life,Camera Quality,Display Quality,Everyday General Use,Android,2026-10-12T12:26:58Z
+RESP_205,Apple,"₹30,000 - ₹60,000",Processing Performance,Camera Quality,Battery Life,Gaming,iOS,2026-10-12T16:52:19Z
+RESP_206,Apple,"₹15,000 - ₹30,000",Battery Life,Processing Performance,Storage Capacity,Everyday General Use,iOS,2026-10-12T18:59:46Z
+RESP_207,Apple,"Above ₹60,000",Battery Life,Display Quality,Build & Design Quality,Business & Productivity,iOS,2026-10-12T20:15:16Z
+RESP_208,Samsung,"₹15,000 - ₹30,000",Display Quality,Camera Quality,Storage Capacity,Photography & Videography,Android,2026-10-13T02:16:12Z
+RESP_209,Apple,"₹30,000 - ₹60,000",Camera Quality,Processing Performance,Build & Design Quality,Gaming,iOS,2026-10-13T04:36:50Z
+RESP_210,Apple,"₹30,000 - ₹60,000",Battery Life,Display Quality,Processing Performance,Gaming,iOS,2026-10-13T10:36:59Z
+RESP_211,Google,"Under ₹15,000",Camera Quality,Storage Capacity,Software & OS Experience,Photography & Videography,Android,2026-10-13T11:29:29Z
+RESP_212,Apple,"₹30,000 - ₹60,000",Software & OS Experience,Build & Design Quality,Camera Quality,Everyday General Use,iOS,2026-10-13T15:47:08Z
+RESP_213,Google,"₹15,000 - ₹30,000",Software & OS Experience,Battery Life,Camera Quality,Photography & Videography,Android,2026-10-13T17:18:00Z
+RESP_214,Samsung,"₹15,000 - ₹30,000",Camera Quality,Display Quality,Software & OS Experience,Photography & Videography,Android,2026-10-13T22:37:58Z
+RESP_215,Samsung,"Above ₹60,000",Processing Performance,Battery Life,Software & OS Experience,Social Media & Content Consumption,Android,2026-10-13T23:24:07Z
+RESP_216,Apple,"₹30,000 - ₹60,000",Build & Design Quality,Processing Performance,Battery Life,Gaming,iOS,2026-10-14T04:57:46Z
+RESP_217,OnePlus,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Display Quality,Gaming,Android,2026-10-14T05:56:03Z
+RESP_218,Samsung,"₹30,000 - ₹60,000",Camera Quality,Storage Capacity,Software & OS Experience,Photography & Videography,Android,2026-10-14T08:45:51Z
+RESP_219,Apple,"₹30,000 - ₹60,000",Battery Life,Processing Performance,Display Quality,Social Media & Content Consumption,iOS,2026-10-14T15:49:02Z
+RESP_220,Samsung,"₹30,000 - ₹60,000",Storage Capacity,Processing Performance,Software & OS Experience,Gaming,Android,2026-10-14T20:13:11Z
+RESP_221,Xiaomi,"₹15,000 - ₹30,000",Storage Capacity,Software & OS Experience,Battery Life,Everyday General Use,Android,2026-10-14T19:39:24Z
+RESP_222,Apple,"Above ₹60,000",Battery Life,Software & OS Experience,Display Quality,Everyday General Use,iOS,2026-10-14T21:32:07Z
+RESP_223,Samsung,"₹15,000 - ₹30,000",Processing Performance,Display Quality,Build & Design Quality,Gaming,No Preference,2026-10-15T04:38:37Z
+RESP_224,Apple,"Above ₹60,000",Software & OS Experience,Processing Performance,Build & Design Quality,Gaming,No Preference,2026-10-15T04:46:49Z
+RESP_225,OnePlus,"Under ₹15,000",Software & OS Experience,Display Quality,Storage Capacity,Everyday General Use,Android,2026-10-15T06:10:02Z
+RESP_226,Samsung,"Under ₹15,000",Battery Life,Processing Performance,Software & OS Experience,Gaming,Android,2026-10-15T10:35:31Z
+RESP_227,Samsung,"₹30,000 - ₹60,000",Display Quality,Camera Quality,Processing Performance,Photography & Videography,Android,2026-10-15T16:25:11Z
+RESP_228,Apple,"Above ₹60,000",Software & OS Experience,Processing Performance,Battery Life,Gaming,iOS,2026-10-15T19:00:00Z
+RESP_229,Apple,"₹15,000 - ₹30,000",Build & Design Quality,Display Quality,Camera Quality,Social Media & Content Consumption,iOS,2026-10-15T21:56:02Z
+RESP_230,Samsung,"₹30,000 - ₹60,000",Battery Life,Camera Quality,Storage Capacity,Photography & Videography,Android,2026-10-15T22:07:50Z
+RESP_231,Apple,"Above ₹60,000",Camera Quality,Build & Design Quality,Battery Life,Business & Productivity,iOS,2026-10-16T02:33:15Z
+RESP_232,OnePlus,"₹30,000 - ₹60,000",Software & OS Experience,Camera Quality,Battery Life,Gaming,Android,2026-10-16T05:46:04Z
+RESP_233,Xiaomi,"₹15,000 - ₹30,000",Battery Life,Build & Design Quality,Camera Quality,Photography & Videography,Android,2026-10-16T11:44:08Z
+RESP_234,Apple,"₹30,000 - ₹60,000",Camera Quality,Software & OS Experience,Storage Capacity,Gaming,iOS,2026-10-16T16:30:40Z
+RESP_235,Google,"₹15,000 - ₹30,000",Camera Quality,Storage Capacity,Battery Life,Photography & Videography,Android,2026-10-16T14:56:10Z
+RESP_236,Xiaomi,"₹15,000 - ₹30,000",Camera Quality,Build & Design Quality,Processing Performance,Gaming,Android,2026-10-16T21:42:10Z
+RESP_237,OnePlus,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Display Quality,Social Media & Content Consumption,Android,2026-10-16T21:41:07Z
+RESP_238,Samsung,"₹15,000 - ₹30,000",Battery Life,Processing Performance,Camera Quality,Everyday General Use,Android,2026-10-17T02:24:30Z
+RESP_239,Google,"Under ₹15,000",Software & OS Experience,Processing Performance,Storage Capacity,Gaming,Android,2026-10-17T08:17:24Z
+RESP_240,Samsung,"Under ₹15,000",Storage Capacity,Battery Life,Processing Performance,Gaming,Android,2026-10-17T05:46:25Z
+RESP_241,Apple,"₹30,000 - ₹60,000",Storage Capacity,Battery Life,Camera Quality,Everyday General Use,iOS,2026-10-17T13:47:03Z
+RESP_242,Apple,"Above ₹60,000",Camera Quality,Build & Design Quality,Processing Performance,Photography & Videography,iOS,2026-10-17T16:32:47Z
+RESP_243,Apple,"Above ₹60,000",Build & Design Quality,Display Quality,Battery Life,Gaming,iOS,2026-10-17T21:02:17Z
+RESP_244,Samsung,"₹15,000 - ₹30,000",Battery Life,Camera Quality,Storage Capacity,Photography & Videography,Android,2026-10-17T20:21:18Z
+RESP_245,Apple,"₹30,000 - ₹60,000",Software & OS Experience,Camera Quality,Battery Life,Everyday General Use,iOS,2026-10-17T22:37:45Z
+RESP_246,Google,"₹15,000 - ₹30,000",Storage Capacity,Software & OS Experience,Camera Quality,Everyday General Use,Android,2026-10-18T02:36:48Z
+RESP_247,Apple,"Above ₹60,000",Display Quality,Battery Life,Camera Quality,Photography & Videography,iOS,2026-10-18T05:29:40Z
+RESP_248,OnePlus,"₹15,000 - ₹30,000",Display Quality,Camera Quality,Processing Performance,Gaming,Android,2026-10-18T12:35:23Z
+RESP_249,Google,"₹30,000 - ₹60,000",Camera Quality,Battery Life,Storage Capacity,Photography & Videography,Android,2026-10-18T10:29:17Z
+RESP_250,Apple,"₹15,000 - ₹30,000",Battery Life,Storage Capacity,Software & OS Experience,Everyday General Use,iOS,2026-10-18T15:46:50Z
+RESP_251,Samsung,"₹15,000 - ₹30,000",Build & Design Quality,Storage Capacity,Processing Performance,Gaming,Android,2026-10-18T19:00:13Z
+RESP_252,OnePlus,"₹15,000 - ₹30,000",Battery Life,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-10-18T22:20:05Z
+RESP_253,Apple,"Above ₹60,000",Build & Design Quality,Camera Quality,Software & OS Experience,Gaming,iOS,2026-10-19T00:50:19Z
+RESP_254,Apple,"₹30,000 - ₹60,000",Camera Quality,Software & OS Experience,Build & Design Quality,Photography & Videography,iOS,2026-10-19T06:26:59Z
+RESP_255,OnePlus,"₹15,000 - ₹30,000",Processing Performance,Battery Life,Camera Quality,Photography & Videography,Android,2026-10-19T09:16:48Z
+RESP_256,Apple,"₹15,000 - ₹30,000",Build & Design Quality,Display Quality,Battery Life,Everyday General Use,iOS,2026-10-19T09:42:39Z
+RESP_257,Xiaomi,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Battery Life,Everyday General Use,Android,2026-10-19T15:00:34Z
+RESP_258,Samsung,"₹15,000 - ₹30,000",Camera Quality,Storage Capacity,Battery Life,Photography & Videography,Android,2026-10-19T16:54:21Z
+RESP_259,Apple,"Above ₹60,000",Display Quality,Software & OS Experience,Camera Quality,Photography & Videography,iOS,2026-10-19T21:33:55Z
+RESP_260,Samsung,"₹15,000 - ₹30,000",Storage Capacity,Camera Quality,Processing Performance,Photography & Videography,Android,2026-10-19T22:11:31Z
+RESP_261,Apple,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Display Quality,Social Media & Content Consumption,iOS,2026-10-20T02:32:09Z
+RESP_262,Apple,"₹30,000 - ₹60,000",Battery Life,Display Quality,Camera Quality,Everyday General Use,iOS,2026-10-20T04:13:38Z
+RESP_263,Other,"Under ₹15,000",Storage Capacity,Battery Life,Build & Design Quality,Everyday General Use,Android,2026-10-20T11:39:35Z
+RESP_264,Apple,"₹15,000 - ₹30,000",Display Quality,Camera Quality,Storage Capacity,Gaming,No Preference,2026-10-20T15:51:38Z
+RESP_265,OnePlus,"₹15,000 - ₹30,000",Software & OS Experience,Battery Life,Processing Performance,Everyday General Use,Android,2026-10-20T15:00:29Z
+RESP_266,OnePlus,"₹15,000 - ₹30,000",Display Quality,Battery Life,Storage Capacity,Social Media & Content Consumption,Android,2026-10-20T17:05:38Z
+RESP_267,Other,"Under ₹15,000",Battery Life,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-10-21T01:32:21Z
+RESP_268,Apple,"₹30,000 - ₹60,000",Display Quality,Processing Performance,Build & Design Quality,Gaming,iOS,2026-10-21T00:00:20Z
+RESP_269,OnePlus,"₹15,000 - ₹30,000",Battery Life,Processing Performance,Storage Capacity,Everyday General Use,Android,2026-10-21T03:20:38Z
+RESP_270,Google,"₹15,000 - ₹30,000",Camera Quality,Build & Design Quality,Display Quality,Photography & Videography,Android,2026-10-21T07:26:13Z
+RESP_271,Apple,"₹15,000 - ₹30,000",Build & Design Quality,Storage Capacity,Camera Quality,Photography & Videography,iOS,2026-10-21T12:54:49Z
+RESP_272,Apple,"₹15,000 - ₹30,000",Software & OS Experience,Processing Performance,Build & Design Quality,Photography & Videography,iOS,2026-10-21T13:01:27Z
+RESP_273,OnePlus,"₹15,000 - ₹30,000",Battery Life,Software & OS Experience,Camera Quality,Social Media & Content Consumption,Android,2026-10-21T16:25:07Z
+RESP_274,Google,"₹15,000 - ₹30,000",Camera Quality,Display Quality,Processing Performance,Gaming,Android,2026-10-21T20:17:06Z
+RESP_275,Google,"₹15,000 - ₹30,000",Processing Performance,Camera Quality,Storage Capacity,Everyday General Use,Android,2026-10-22T00:17:18Z
+RESP_276,Apple,"₹30,000 - ₹60,000",Display Quality,Build & Design Quality,Software & OS Experience,Business & Productivity,iOS,2026-10-22T06:43:22Z
+RESP_277,Samsung,"₹15,000 - ₹30,000",Camera Quality,Battery Life,Software & OS Experience,Photography & Videography,No Preference,2026-10-22T06:19:16Z
+RESP_278,Motorola,"₹15,000 - ₹30,000",Battery Life,Processing Performance,Storage Capacity,Gaming,Android,2026-10-22T10:27:19Z
+RESP_279,Motorola,"Under ₹15,000",Build & Design Quality,Camera Quality,Battery Life,Everyday General Use,Android,2026-10-22T16:39:04Z
+RESP_280,Motorola,"₹30,000 - ₹60,000",Battery Life,Storage Capacity,Processing Performance,Gaming,Android,2026-10-22T17:49:26Z
+RESP_281,Motorola,"₹30,000 - ₹60,000",Software & OS Experience,Processing Performance,Battery Life,Gaming,Android,2026-10-22T18:03:13Z
+RESP_282,Samsung,"₹15,000 - ₹30,000",Processing Performance,Camera Quality,Storage Capacity,Photography & Videography,Android,2026-10-23T01:02:25Z
+RESP_283,Apple,"₹15,000 - ₹30,000",Software & OS Experience,Camera Quality,Battery Life,Everyday General Use,iOS,2026-10-23T05:20:50Z
+RESP_284,OnePlus,"₹30,000 - ₹60,000",Software & OS Experience,Battery Life,Display Quality,Photography & Videography,Android,2026-10-23T05:46:48Z
+RESP_285,Google,"₹30,000 - ₹60,000",Storage Capacity,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-10-23T08:58:52Z
+RESP_286,Other,"₹30,000 - ₹60,000",Software & OS Experience,Battery Life,Display Quality,Social Media & Content Consumption,iOS,2026-10-23T08:58:56Z
+RESP_287,Google,"₹30,000 - ₹60,000",Processing Performance,Build & Design Quality,Software & OS Experience,Gaming,Android,2026-10-23T12:33:10Z
+RESP_288,Apple,"Above ₹60,000",Build & Design Quality,Camera Quality,Display Quality,Business & Productivity,iOS,2026-10-23T15:34:06Z
+RESP_289,Apple,"₹30,000 - ₹60,000",Build & Design Quality,Software & OS Experience,Camera Quality,Business & Productivity,iOS,2026-10-23T18:48:42Z
+RESP_290,Other,"₹15,000 - ₹30,000",Battery Life,Display Quality,Storage Capacity,Everyday General Use,Android,2026-10-24T01:31:33Z
+RESP_291,Apple,"₹15,000 - ₹30,000",Battery Life,Processing Performance,Build & Design Quality,Business & Productivity,iOS,2026-10-24T04:14:10Z
+RESP_292,Google,"₹15,000 - ₹30,000",Build & Design Quality,Processing Performance,Display Quality,Gaming,Android,2026-10-24T08:24:20Z
+RESP_293,Motorola,"Under ₹15,000",Storage Capacity,Camera Quality,Software & OS Experience,Photography & Videography,Android,2026-10-24T08:56:34Z
+RESP_294,Apple,"₹30,000 - ₹60,000",Camera Quality,Storage Capacity,Build & Design Quality,Photography & Videography,iOS,2026-10-24T12:43:55Z
+RESP_295,Motorola,"₹15,000 - ₹30,000",Storage Capacity,Battery Life,Software & OS Experience,Business & Productivity,Android,2026-10-24T16:48:50Z
+RESP_296,Google,"₹30,000 - ₹60,000",Camera Quality,Software & OS Experience,Processing Performance,Photography & Videography,Android,2026-10-24T21:08:26Z
+RESP_297,Samsung,"₹15,000 - ₹30,000",Display Quality,Processing Performance,Battery Life,Social Media & Content Consumption,Android,2026-10-25T00:56:33Z
+RESP_298,Samsung,"Above ₹60,000",Build & Design Quality,Processing Performance,Display Quality,Social Media & Content Consumption,Android,2026-10-25T04:04:58Z
+RESP_299,Google,"₹30,000 - ₹60,000",Processing Performance,Camera Quality,Battery Life,Gaming,Android,2026-10-25T05:19:26Z
+RESP_300,Samsung,"₹15,000 - ₹30,000",Camera Quality,Display Quality,Build & Design Quality,Photography & Videography,Android,2026-10-25T09:17:31Z

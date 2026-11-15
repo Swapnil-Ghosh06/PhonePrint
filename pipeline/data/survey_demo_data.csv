@@ -1,0 +1,34 @@
+# PHONEPRINT SYNTHETIC BENCHMARK DATASET [SIMULATED DATA N=30]
+# ACADEMIC DISCLAIMER: This file contains synthetic demonstration benchmark data for testing discrete mathematical algorithms.
+# It does NOT represent empirical research findings or real user survey results.
+response_id,preferred_brand,budget_range,preferred_features,primary_use,os_preference
+RESP_001,Apple,"Above ₹60,000",Display Quality; Camera Quality; Storage Capacity,Photography & Videography,iOS
+RESP_002,Apple,"Above ₹60,000",Display Quality; Battery Life; Camera Quality,Photography & Videography,iOS
+RESP_003,Samsung,"Above ₹60,000",Processing Performance; Camera Quality; Software & OS Experience,Photography & Videography,Android
+RESP_004,Samsung,"₹15,000 - ₹30,000",Battery Life; Storage Capacity; Camera Quality,Photography & Videography,Android
+RESP_005,Xiaomi,"₹15,000 - ₹30,000",Processing Performance; Display Quality; Battery Life,Gaming,Android
+RESP_006,Motorola,"Under ₹15,000",Storage Capacity; Battery Life; Display Quality,Everyday General Use,Android
+RESP_007,Apple,"₹30,000 - ₹60,000",Battery Life; Camera Quality; Processing Performance,Everyday General Use,iOS
+RESP_008,Google,"₹30,000 - ₹60,000",Camera Quality; Battery Life; Build & Design Quality,Photography & Videography,iOS
+RESP_009,Apple,"₹15,000 - ₹30,000",Battery Life; Software & OS Experience; Display Quality,Business & Productivity,iOS
+RESP_010,Xiaomi,"₹15,000 - ₹30,000",Camera Quality; Processing Performance; Battery Life,Gaming,Android
+RESP_011,OnePlus,"₹30,000 - ₹60,000",Battery Life; Display Quality; Processing Performance,Everyday General Use,iOS
+RESP_012,Samsung,"₹15,000 - ₹30,000",Processing Performance; Storage Capacity; Display Quality,Everyday General Use,Android
+RESP_013,Samsung,"Under ₹15,000",Battery Life; Display Quality; Storage Capacity,Social Media & Content Consumption,Android
+RESP_014,Google,"₹15,000 - ₹30,000",Processing Performance; Camera Quality; Battery Life,Business & Productivity,Android
+RESP_015,OnePlus,"₹30,000 - ₹60,000",Display Quality; Battery Life; Processing Performance,Gaming,Android
+RESP_016,Apple,"₹30,000 - ₹60,000",Display Quality; Processing Performance; Camera Quality,Social Media & Content Consumption,iOS
+RESP_017,Apple,"Above ₹60,000",Camera Quality; Processing Performance; Display Quality,Gaming,No Preference
+RESP_018,Samsung,"₹30,000 - ₹60,000",Camera Quality; Storage Capacity; Battery Life,Everyday General Use,Android
+RESP_019,OnePlus,"₹15,000 - ₹30,000",Battery Life; Software & OS Experience; Processing Performance,Business & Productivity,Android
+RESP_020,Samsung,"₹15,000 - ₹30,000",Camera Quality; Processing Performance; Storage Capacity,Photography & Videography,Android
+RESP_021,Other,"Under ₹15,000",Processing Performance; Battery Life; Camera Quality,Photography & Videography,Android
+RESP_022,Apple,"Above ₹60,000",Camera Quality; Processing Performance; Build & Design Quality,Gaming,iOS
+RESP_023,Xiaomi,"₹15,000 - ₹30,000",Processing Performance; Display Quality; Camera Quality,Photography & Videography,Android
+RESP_024,Google,"₹15,000 - ₹30,000",Battery Life; Camera Quality; Software & OS Experience,Photography & Videography,Android
+RESP_025,Google,"₹15,000 - ₹30,000",Software & OS Experience; Storage Capacity; Battery Life,Business & Productivity,Android
+RESP_026,Apple,"Above ₹60,000",Camera Quality; Processing Performance; Display Quality,Photography & Videography,iOS
+RESP_027,Google,"₹15,000 - ₹30,000",Battery Life; Storage Capacity; Processing Performance,Gaming,Android
+RESP_028,Apple,"₹30,000 - ₹60,000",Processing Performance; Display Quality; Battery Life,Gaming,iOS
+RESP_029,Xiaomi,"₹15,000 - ₹30,000",Storage Capacity; Camera Quality; Build & Design Quality,Photography & Videography,No Preference
+RESP_030,Apple,"₹30,000 - ₹60,000",Processing Performance; Display Quality; Build & Design Quality,Social Media & Content Consumption,iOS

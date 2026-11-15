@@ -1,0 +1,3611 @@
+{
+  "metadata": {
+    "version": "2.1.0",
+    "generated_at": "2026-11-08T14:46:28.195770+00:00",
+    "total_responses": 300,
+    "is_demo": true,
+    "description": "SIMULATED CAMPUS DATA \u2014 N=300. Realistic synthetic student preference survey for university discrete mathematics exploration."
+  },
+  "responses": [
+    {
+      "response_id": "RESP_001",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_002",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_003",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_004",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_005",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_006",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_007",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_008",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_009",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Display Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_010",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_011",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_012",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Storage Capacity",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_013",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_014",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_015",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_016",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_017",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_018",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_019",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Processing Performance"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_020",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_021",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_022",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_023",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_024",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_025",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_026",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_027",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_028",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_029",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_030",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_031",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_032",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_033",
+      "preferred_brand": "Motorola",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_034",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_035",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_036",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_037",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_038",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_039",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_040",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_041",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_042",
+      "preferred_brand": "Google",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_043",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_044",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_045",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Display Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_046",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_047",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_048",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_049",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_050",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_051",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_052",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_053",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_054",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_055",
+      "preferred_brand": "OnePlus",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_056",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_057",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_058",
+      "preferred_brand": "OnePlus",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_059",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_060",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_061",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_062",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_063",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_064",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_065",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_066",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_067",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_068",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_069",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_070",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Software & OS Experience",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_071",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_072",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_073",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_074",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_075",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_076",
+      "preferred_brand": "OnePlus",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_077",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_078",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_079",
+      "preferred_brand": "Google",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_080",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_081",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_082",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_083",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_084",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_085",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Display Quality",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_086",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_087",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_088",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_089",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_090",
+      "preferred_brand": "Google",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Display Quality",
+        "Build & Design Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_091",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_092",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_093",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_094",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_095",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_096",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_097",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_098",
+      "preferred_brand": "Google",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_099",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Display Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_100",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_101",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_102",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_103",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Build & Design Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_104",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_105",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_106",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_107",
+      "preferred_brand": "Motorola",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_108",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_109",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Software & OS Experience",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_110",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_111",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_112",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Build & Design Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_113",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_114",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_115",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_116",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_117",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_118",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_119",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_120",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_121",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_122",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_123",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_124",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_125",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_126",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_127",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_128",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_129",
+      "preferred_brand": "Google",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_130",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_131",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_132",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_133",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_134",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_135",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_136",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_137",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Software & OS Experience",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_138",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_139",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Software & OS Experience",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_140",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_141",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_142",
+      "preferred_brand": "Google",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_143",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_144",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_145",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_146",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_147",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_148",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_149",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_150",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_151",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_152",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Build & Design Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_153",
+      "preferred_brand": "Apple",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_154",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_155",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_156",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_157",
+      "preferred_brand": "Google",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_158",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_159",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_160",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Build & Design Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_161",
+      "preferred_brand": "Google",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_162",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_163",
+      "preferred_brand": "Apple",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_164",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_165",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_166",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Software & OS Experience",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_167",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_168",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_169",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_170",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_171",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_172",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_173",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_174",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_175",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Build & Design Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_176",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Software & OS Experience",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_177",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_178",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_179",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_180",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_181",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_182",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_183",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_184",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_185",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_186",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_187",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_188",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_189",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_190",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_191",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_192",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_193",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_194",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_195",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_196",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_197",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_198",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_199",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Build & Design Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_200",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_201",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Camera Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_202",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_203",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_204",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_205",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_206",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_207",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_208",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_209",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_210",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_211",
+      "preferred_brand": "Google",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_212",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Build & Design Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_213",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_214",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_215",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_216",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_217",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_218",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_219",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_220",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Processing Performance",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_221",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Software & OS Experience",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_222",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_223",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_224",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_225",
+      "preferred_brand": "OnePlus",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_226",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_227",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_228",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_229",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_230",
+      "preferred_brand": "Samsung",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_231",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_232",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_233",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Build & Design Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_234",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_235",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_236",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_237",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_238",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_239",
+      "preferred_brand": "Google",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_240",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_241",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_242",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_243",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_244",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_245",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_246",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Software & OS Experience",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_247",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_248",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_249",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_250",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_251",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_252",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_253",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_254",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_255",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_256",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_257",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_258",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_259",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Software & OS Experience",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_260",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_261",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_262",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_263",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_264",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_265",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_266",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_267",
+      "preferred_brand": "Other",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_268",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_269",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_270",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Build & Design Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_271",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_272",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_273",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Camera Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_274",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_275",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_276",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Display Quality",
+        "Build & Design Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_277",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_278",
+      "preferred_brand": "Motorola",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_279",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_280",
+      "preferred_brand": "Motorola",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_281",
+      "preferred_brand": "Motorola",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_282",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_283",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_284",
+      "preferred_brand": "OnePlus",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_285",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_286",
+      "preferred_brand": "Other",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_287",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Build & Design Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_288",
+      "preferred_brand": "Apple",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Camera Quality",
+        "Display Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_289",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Software & OS Experience",
+        "Camera Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_290",
+      "preferred_brand": "Other",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_291",
+      "preferred_brand": "Apple",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Battery Life",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_292",
+      "preferred_brand": "Google",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_293",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under $400",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_294",
+      "preferred_brand": "Apple",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_295",
+      "preferred_brand": "Motorola",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_296",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Software & OS Experience",
+        "Processing Performance"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_297",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Display Quality",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_298",
+      "preferred_brand": "Samsung",
+      "budget_range": "Over $1,000",
+      "preferred_features": [
+        "Build & Design Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_299",
+      "preferred_brand": "Google",
+      "budget_range": "$700 - $1,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_300",
+      "preferred_brand": "Samsung",
+      "budget_range": "$400 - $700",
+      "preferred_features": [
+        "Camera Quality",
+        "Display Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    }
+  ]
+}

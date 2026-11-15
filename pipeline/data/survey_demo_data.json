@@ -1,0 +1,371 @@
+{
+  "metadata": {
+    "version": "2.1.0",
+    "generated_at": "2026-11-12T14:00:00.000000+00:00",
+    "total_responses": 30,
+    "is_demo": true,
+    "description": "SIMULATED CAMPUS DATA — N=30. Realistic synthetic student preference survey for university discrete mathematics exploration."
+  },
+  "responses": [
+    {
+      "response_id": "RESP_001",
+      "preferred_brand": "Apple",
+      "budget_range": "Above ₹60,000",
+      "preferred_features": [
+        "Display Quality",
+        "Camera Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_002",
+      "preferred_brand": "Apple",
+      "budget_range": "Above ₹60,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_003",
+      "preferred_brand": "Samsung",
+      "budget_range": "Above ₹60,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_004",
+      "preferred_brand": "Samsung",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_005",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_006",
+      "preferred_brand": "Motorola",
+      "budget_range": "Under ₹15,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Battery Life",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_007",
+      "preferred_brand": "Apple",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_008",
+      "preferred_brand": "Google",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Battery Life",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_009",
+      "preferred_brand": "Apple",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Display Quality"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_010",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_011",
+      "preferred_brand": "OnePlus",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Processing Performance"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_012",
+      "preferred_brand": "Samsung",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Storage Capacity",
+        "Display Quality"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_013",
+      "preferred_brand": "Samsung",
+      "budget_range": "Under ₹15,000",
+      "preferred_features": [
+        "Battery Life",
+        "Display Quality",
+        "Storage Capacity"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_014",
+      "preferred_brand": "Google",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Camera Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_015",
+      "preferred_brand": "OnePlus",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Display Quality",
+        "Battery Life",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_016",
+      "preferred_brand": "Apple",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Display Quality",
+        "Processing Performance",
+        "Camera Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_017",
+      "preferred_brand": "Apple",
+      "budget_range": "Above ₹60,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_018",
+      "preferred_brand": "Samsung",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Everyday General Use",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_019",
+      "preferred_brand": "OnePlus",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Battery Life",
+        "Software & OS Experience",
+        "Processing Performance"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_020",
+      "preferred_brand": "Samsung",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Storage Capacity"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_021",
+      "preferred_brand": "Other",
+      "budget_range": "Under ₹15,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Battery Life",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_022",
+      "preferred_brand": "Apple",
+      "budget_range": "Above ₹60,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_023",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Camera Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_024",
+      "preferred_brand": "Google",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Battery Life",
+        "Camera Quality",
+        "Software & OS Experience"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_025",
+      "preferred_brand": "Google",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Software & OS Experience",
+        "Storage Capacity",
+        "Battery Life"
+      ],
+      "primary_use": "Business & Productivity",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_026",
+      "preferred_brand": "Apple",
+      "budget_range": "Above ₹60,000",
+      "preferred_features": [
+        "Camera Quality",
+        "Processing Performance",
+        "Display Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_027",
+      "preferred_brand": "Google",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Battery Life",
+        "Storage Capacity",
+        "Processing Performance"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "Android"
+    },
+    {
+      "response_id": "RESP_028",
+      "preferred_brand": "Apple",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Battery Life"
+      ],
+      "primary_use": "Gaming",
+      "os_preference": "iOS"
+    },
+    {
+      "response_id": "RESP_029",
+      "preferred_brand": "Xiaomi",
+      "budget_range": "₹15,000 - ₹30,000",
+      "preferred_features": [
+        "Storage Capacity",
+        "Camera Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Photography & Videography",
+      "os_preference": "No Preference"
+    },
+    {
+      "response_id": "RESP_030",
+      "preferred_brand": "Apple",
+      "budget_range": "₹30,000 - ₹60,000",
+      "preferred_features": [
+        "Processing Performance",
+        "Display Quality",
+        "Build & Design Quality"
+      ],
+      "primary_use": "Social Media & Content Consumption",
+      "os_preference": "iOS"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "active_dataset": "demo",
+  "is_demo": true,
+  "total_responses": 30,
+  "last_updated": "2026-11-12T14:00:00.000000+00:00",
+  "demo_file": "survey_demo_data.json",
+  "real_file": "survey_active_data.json",
+  "notes": "SIMULATED CAMPUS DATA — N=30"
+}
