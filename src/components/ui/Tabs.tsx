@@ -22,19 +22,19 @@ export function Tabs({
   size = "md",
 }: TabsProps) {
   const sizeStyles = {
-    sm: "p-1 text-xs",
-    md: "p-1.5 text-xs sm:text-sm",
+    sm: "p-1 text-xs gap-1",
+    md: "p-1.5 text-xs sm:text-sm gap-1.5",
   };
 
   const itemSizeStyles = {
-    sm: "px-3 py-1.5",
-    md: "px-4 py-2",
+    sm: "px-3 py-1 rounded-full",
+    md: "px-4 py-1.5 rounded-full",
   };
 
   return (
     <div
       role="tablist"
-      className={`glass-panel inline-flex flex-wrap items-center rounded-2xl border border-white/80 shadow-sm ${sizeStyles[size]} ${className}`}
+      className={`inline-flex flex-wrap items-center rounded-full border border-slate-200/70 bg-slate-100/70 backdrop-blur-md shadow-xs ${sizeStyles[size]} ${className}`}
     >
       {items.map((tab) => {
         const isActive = tab.id === activeId;
@@ -44,20 +44,20 @@ export function Tabs({
             role="tab"
             aria-selected={isActive}
             onClick={() => onChange(tab.id)}
-            className={`flex items-center gap-2 rounded-xl font-montserrat transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
+            className={`flex items-center gap-2 font-sans font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
               itemSizeStyles[size]
             } ${
               isActive
-                ? "bg-white text-blue-700 font-semibold shadow-sm border border-blue-100/60"
-                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
+                ? "bg-white text-slate-900 font-semibold shadow-[0_2px_8px_rgba(15,23,42,0.06)] border border-slate-200/60"
+                : "text-slate-600 hover:text-slate-950 hover:bg-white/50"
             }`}
           >
             <span>{tab.label}</span>
             {tab.badge !== undefined && (
               <span
-                className={`ml-1 rounded-full px-2 py-0.5 font-montserrat text-[10px] font-semibold transition-colors ${
+                className={`rounded-full px-2 py-0.5 font-sora text-[10px] font-semibold ${
                   isActive
-                    ? "bg-blue-100 text-blue-700"
+                    ? "bg-blue-50 text-blue-700 border border-blue-200/50"
                     : "bg-slate-200/70 text-slate-600"
                 }`}
               >

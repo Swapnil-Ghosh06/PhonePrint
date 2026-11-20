@@ -198,43 +198,43 @@ export default function ExperimentStudioPage() {
         </Callout>
 
         {/* Studio Navigation Tabs */}
-        <div className="glass-panel rounded-2xl border border-white/80 p-1.5 shadow-sm flex flex-wrap items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-full bg-[#FAF8F5] border border-[#EAE3D5] shadow-2xs">
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
+            className={`px-4 py-2 rounded-full text-xs font-sora transition-all duration-200 ${
               activeTab === "all"
-                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
-                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
+                ? "bg-[#1C1B18] text-white shadow-xs font-bold"
+                : "text-[#78716C] hover:text-[#1C1B18] hover:bg-white font-medium"
             }`}
           >
             All Experiments
           </button>
           <button
             onClick={() => setActiveTab("exp1")}
-            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
+            className={`px-4 py-2 rounded-full text-xs font-sora transition-all duration-200 ${
               activeTab === "exp1"
-                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
-                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
+                ? "bg-[#1C1B18] text-white shadow-xs font-bold"
+                : "text-[#78716C] hover:text-[#1C1B18] hover:bg-white font-medium"
             }`}
           >
             Exp 1: Brand–Feature Association
           </button>
           <button
             onClick={() => setActiveTab("exp2")}
-            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
+            className={`px-4 py-2 rounded-full text-xs font-sora transition-all duration-200 ${
               activeTab === "exp2"
-                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
-                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
+                ? "bg-[#1C1B18] text-white shadow-xs font-bold"
+                : "text-[#78716C] hover:text-[#1C1B18] hover:bg-white font-medium"
             }`}
           >
             Exp 2: Combinations by Budget
           </button>
           <button
             onClick={() => setActiveTab("methodology")}
-            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
+            className={`px-4 py-2 rounded-full text-xs font-sora transition-all duration-200 ${
               activeTab === "methodology"
-                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
-                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
+                ? "bg-[#1C1B18] text-white shadow-xs font-bold"
+                : "text-[#78716C] hover:text-[#1C1B18] hover:bg-white font-medium"
             }`}
           >
             Methodology &amp; Hypotheses

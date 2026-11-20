@@ -8,9 +8,9 @@ export interface PhonePrintLogoProps {
 }
 
 /**
- * Modern PhonePrint Identity Symbol:
- * Sleek smartphone silhouette with subtle biometric focal contours,
- * soft gradient fill, and crisp geometry.
+ * PhonePrint Identity Symbol:
+ * Refined glassmorphic brand mark combining modern smartphone silhouette,
+ * biometric contours, and mathematical data focal node.
  */
 export function PhonePrintLogo({
   size = 32,
@@ -20,98 +20,100 @@ export function PhonePrintLogo({
 }: PhonePrintLogoProps) {
   return (
     <div className={`inline-flex items-center gap-2.5 ${className}`}>
-      <div className="relative flex items-center justify-center">
-        <svg
-          width={size}
-          height={size}
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="shrink-0 transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
-          aria-hidden="true"
-        >
-          <defs>
-            <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#3b82f6" />
-              <stop offset="100%" stopColor="#1d4ed8" />
-            </linearGradient>
-            <linearGradient id="logoInner" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#ffffff" stopOpacity="0.95" />
-              <stop offset="100%" stopColor="#ffffff" stopOpacity="0.75" />
-            </linearGradient>
-          </defs>
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="shrink-0 transition-transform duration-300 group-hover:scale-105"
+        aria-hidden="true"
+      >
+        <defs>
+          <linearGradient id="logoCardGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#FFFFFF" stopOpacity="0.95" />
+            <stop offset="1" stopColor="#EFF6FF" stopOpacity="0.8" />
+          </linearGradient>
+          <linearGradient id="logoBorderGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#93C5FD" stopOpacity="0.6" />
+            <stop offset="1" stopColor="#E2E8F0" stopOpacity="0.5" />
+          </linearGradient>
+          <linearGradient id="nodeGrad" x1="16" y1="21" x2="24" y2="29" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#3B82F6" />
+            <stop offset="1" stopColor="#1D4ED8" />
+          </linearGradient>
+        </defs>
 
-          {/* Rounded smartphone frame with vibrant soft gradient */}
-          <rect
-            x="3"
-            y="2"
-            width="34"
-            height="36"
-            rx="11"
-            fill="url(#logoBg)"
-          />
+        {/* Squircle container with glass reflection */}
+        <rect
+          x="2.5"
+          y="2.5"
+          width="35"
+          height="35"
+          rx="10"
+          fill="url(#logoCardGrad)"
+          stroke="url(#logoBorderGrad)"
+          strokeWidth="1.2"
+        />
 
-          {/* Inner subtle glow rim */}
-          <rect
-            x="4"
-            y="3"
-            width="32"
-            height="34"
-            rx="10"
-            stroke="rgba(255, 255, 255, 0.4)"
-            strokeWidth="1"
-          />
+        {/* Top speaker slit */}
+        <rect
+          x="16.5"
+          y="6.5"
+          width="7"
+          height="1.5"
+          rx="0.75"
+          className="fill-slate-400"
+        />
 
-          {/* Speaker bar */}
-          <line
-            x1="17"
-            y1="6.5"
-            x2="23"
-            y2="6.5"
-            stroke="rgba(255, 255, 255, 0.6)"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          />
+        {/* Outer biometric loop */}
+        <path
+          d="M10.5 27C10.5 21 14.5 12 20 12C25.5 12 29.5 21 29.5 27"
+          className="stroke-slate-700"
+          strokeWidth="1.75"
+          strokeLinecap="round"
+        />
 
-          {/* Outer biometric loop */}
-          <path
-            d="M11 27C11 20 15 13 20 13C25 13 29 20 29 27"
-            stroke="url(#logoInner)"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
+        {/* Middle biometric loop */}
+        <path
+          d="M14 27.5C14 23 16.5 16 20 16C23.5 16 26 23 26 27.5"
+          className="stroke-slate-800"
+          strokeWidth="1.75"
+          strokeLinecap="round"
+        />
 
-          {/* Middle biometric loop */}
-          <path
-            d="M15 28C15 23 17 17.5 20 17.5C23 17.5 25 23 25 28"
-            stroke="url(#logoInner)"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
+        {/* Inner biometric arch */}
+        <path
+          d="M17.5 28C17.5 25 18.5 20 20 20C21.5 20 22.5 25 22.5 28"
+          className="stroke-slate-900"
+          strokeWidth="1.75"
+          strokeLinecap="round"
+        />
 
-          {/* Center preference node / core biometric origin */}
-          <circle
-            cx="20"
-            cy="24"
-            r="2"
-            fill="#ffffff"
-          />
-        </svg>
-      </div>
+        {/* Central preference data node */}
+        <circle
+          cx="20"
+          cy="25"
+          r="2.5"
+          fill="url(#nodeGrad)"
+        />
+        <circle
+          cx="20"
+          cy="25"
+          r="4.5"
+          stroke="#60A5FA"
+          strokeWidth="0.8"
+          strokeDasharray="2 2"
+        />
+      </svg>
 
       {showWordmark && (
-        <div className={`flex flex-col text-left leading-none ${wordmarkClassName}`}>
+        <div className={`flex flex-col ${wordmarkClassName}`}>
           <div className="flex items-center gap-1.5">
-            <span className="font-sora text-base font-extrabold tracking-tight text-slate-900">
-              Phone<span className="text-blue-600">Print</span>
-            </span>
-            <span className="rounded-full bg-blue-50 border border-blue-200/80 px-1.5 py-0.5 text-[9px] font-montserrat font-bold uppercase tracking-wider text-blue-700">
-              Lab
+            <span className="font-heading text-base font-extrabold tracking-tight text-[#1C1B18] whitespace-nowrap">
+              Phone<span className="text-blue-700">Print</span>
             </span>
           </div>
-          <span className="text-[10px] font-montserrat font-medium text-slate-600 tracking-wide mt-0.5">
-            Discrete Preference Analytics
-          </span>
         </div>
       )}
     </div>

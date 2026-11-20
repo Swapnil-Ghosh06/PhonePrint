@@ -25,20 +25,20 @@ export function ChartCard({
   children,
   className = "",
 }: ChartCardProps) {
-  const dotColor = {
-    cobalt: "bg-blue-600",
-    lime: "bg-emerald-600",
+  const accentDot = {
+    cobalt: "bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.6)]",
+    lime: "bg-emerald-600 shadow-[0_0_8px_rgba(16,185,129,0.6)]",
   };
 
   return (
     <div
-      className={`glass-panel rounded-2xl border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] flex flex-col justify-between overflow-hidden transition-all duration-300 hover:shadow-[0_12px_36px_rgb(0,0,0,0.06)] ${className}`}
+      className={`flex flex-col justify-between rounded-2xl border border-white/90 bg-white/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(15,23,42,0.04)] text-slate-800 overflow-hidden transition-all duration-300 hover:shadow-[0_16px_36px_rgb(37,99,235,0.06)] ${className}`}
     >
       <div>
-        <div className="flex flex-wrap items-start justify-between gap-3 border-b border-slate-200/50 bg-white/40 px-6 py-4 rounded-t-2xl">
+        <div className="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100/80 bg-slate-50/40 px-6 py-4">
           <div>
             <div className="flex items-center gap-2.5">
-              <h3 className="text-sm sm:text-base font-sora font-bold tracking-tight text-slate-900">
+              <h3 className="text-sm font-heading font-bold tracking-tight text-slate-900">
                 {title}
               </h3>
               {badge && (
@@ -48,7 +48,7 @@ export function ChartCard({
               )}
             </div>
             {subtitle && (
-              <p className="mt-1 text-xs text-slate-500 font-sans">
+              <p className="mt-0.5 text-xs text-slate-500 font-sans">
                 {subtitle}
               </p>
             )}
@@ -60,17 +60,17 @@ export function ChartCard({
       </div>
 
       {takeaway && (
-        <div className="border-t border-slate-200/50 bg-slate-50/60 px-6 py-3.5 text-xs leading-relaxed text-slate-700 rounded-b-2xl flex items-start gap-3">
+        <div className="border-t border-slate-100/80 bg-slate-50/50 px-6 py-3.5 text-xs leading-relaxed text-slate-700 flex items-start gap-2.5">
           <span
-            className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${dotColor[takeawayAccent]}`}
+            className={`mt-1 h-2 w-2 shrink-0 rounded-full ${accentDot[takeawayAccent]}`}
             aria-hidden="true"
           />
-          <p className="font-sans">
-            <span className="font-montserrat text-[11px] uppercase font-bold text-slate-900 mr-2 tracking-wide">
-              Key Insight
+          <div className="space-y-0.5">
+            <span className="font-sora text-[10px] font-bold uppercase tracking-wider text-blue-700 mr-2">
+              Key Observation
             </span>
-            {takeaway}
-          </p>
+            <span className="font-sans text-slate-600">{takeaway}</span>
+          </div>
         </div>
       )}
     </div>

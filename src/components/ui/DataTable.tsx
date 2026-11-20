@@ -25,11 +25,11 @@ export function DataTable<T>({
 }: DataTableProps<T>) {
   return (
     <div
-      className={`overflow-x-auto glass-panel rounded-2xl border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] ${className}`}
+      className={`overflow-x-auto rounded-2xl border border-white/80 bg-white/75 backdrop-blur-xl shadow-[0_8px_30px_rgb(15,23,42,0.04)] ${className}`}
     >
       <table className="w-full text-left text-xs border-collapse">
         <thead>
-          <tr className="border-b border-slate-200/60 bg-white/50 text-slate-700">
+          <tr className="border-b border-slate-200/60 bg-slate-50/60 text-slate-700 font-medium">
             {columns.map((col) => {
               const alignClass =
                 col.align === "center"
@@ -40,7 +40,7 @@ export function DataTable<T>({
               return (
                 <th
                   key={col.key}
-                  className={`px-5 py-3.5 font-montserrat tracking-wider uppercase text-[11px] text-slate-500 font-semibold ${alignClass} ${col.className || ""}`}
+                  className={`px-5 py-3 font-sora tracking-wider uppercase text-[11px] text-slate-500 font-semibold ${alignClass} ${col.className || ""}`}
                 >
                   {col.header}
                 </th>
@@ -48,12 +48,12 @@ export function DataTable<T>({
             })}
           </tr>
         </thead>
-        <tbody className="divide-y divide-slate-100/80 font-sans">
+        <tbody className="divide-y divide-slate-100 font-sans">
           {data.length === 0 ? (
             <tr>
               <td
                 colSpan={columns.length}
-                className="px-6 py-12 text-center text-slate-400 font-sans"
+                className="px-5 py-8 text-center text-slate-400 italic"
               >
                 {emptyMessage}
               </td>
@@ -62,8 +62,8 @@ export function DataTable<T>({
             data.map((item, idx) => (
               <tr
                 key={keyExtractor(item)}
-                className={`transition-colors duration-150 hover:bg-blue-50/40 ${
-                  idx % 2 === 1 ? "bg-white/30" : "bg-transparent"
+                className={`transition-colors hover:bg-blue-50/30 ${
+                  idx % 2 === 1 ? "bg-slate-50/30" : "bg-white/40"
                 }`}
               >
                 {columns.map((col) => {
@@ -78,7 +78,7 @@ export function DataTable<T>({
                       key={col.key}
                       className={`px-5 py-3 text-slate-700 ${alignClass} ${col.className || ""}`}
                     >
-                      {col.render ? col.render(item) : String((item as Record<string, unknown>)[col.key] ?? "")}
+                      {col.render ? col.render(item) : (item as Record<string, React.ReactNode>)[col.key]}
                     </td>
                   );
                 })}

@@ -61,17 +61,17 @@ const OPERATIONS_2SET: OperationButtonDef[] = [
 
 const OPERATIONS_3SET: OperationButtonDef[] = [
   { id: "union_abc", label: "Triple Union", symbol: "A ∪ B ∪ C", category: "core" },
-  { id: "inter_abc", label: "Triple Intersect", symbol: "A ∩ B ∩ C", category: "core" },
-  { id: "inter_ab", label: "Overlap A ∩ B", symbol: "A ∩ B", category: "core" },
-  { id: "inter_ac", label: "Overlap A ∩ C", symbol: "A ∩ C", category: "core" },
-  { id: "inter_bc", label: "Overlap B ∩ C", symbol: "B ∩ C", category: "core" },
-  { id: "only_a", label: "A Only", symbol: "A \\ (B ∪ C)", category: "relative" },
-  { id: "only_b", label: "B Only", symbol: "B \\ (A ∪ C)", category: "relative" },
-  { id: "only_c", label: "C Only", symbol: "C \\ (A ∪ B)", category: "relative" },
-  { id: "only_ab", label: "AB Only", symbol: "(A ∩ B) \\ C", category: "relative" },
-  { id: "only_ac", label: "AC Only", symbol: "(A ∩ C) \\ B", category: "relative" },
-  { id: "only_bc", label: "BC Only", symbol: "(B ∩ C) \\ A", category: "relative" },
-  { id: "outside_abc", label: "Outside / None", symbol: "(A ∪ B ∪ C)ᶜ", category: "complement" },
+  { id: "inter_abc", label: "Triple Intersection", symbol: "A ∩ B ∩ C", category: "core" },
+  { id: "inter_ab", label: "Pairwise Overlap", symbol: "A ∩ B", category: "core" },
+  { id: "inter_ac", label: "Pairwise Overlap", symbol: "A ∩ C", category: "core" },
+  { id: "inter_bc", label: "Pairwise Overlap", symbol: "B ∩ C", category: "core" },
+  { id: "only_a", label: "Region 1", symbol: "A Only", category: "relative" },
+  { id: "only_b", label: "Region 2", symbol: "B Only", category: "relative" },
+  { id: "only_c", label: "Region 3", symbol: "C Only", category: "relative" },
+  { id: "only_ab", label: "Region 4", symbol: "AB Only", category: "relative" },
+  { id: "only_ac", label: "Region 5", symbol: "AC Only", category: "relative" },
+  { id: "only_bc", label: "Region 6", symbol: "BC Only", category: "relative" },
+  { id: "outside_abc", label: "Region 8", symbol: "Outside All 3", category: "complement" },
 ];
 
 export function SetOperationsToolbar({
@@ -84,44 +84,43 @@ export function SetOperationsToolbar({
   const operations = mode === "2-set" ? OPERATIONS_2SET : OPERATIONS_3SET;
 
   return (
-    <div className="glass-panel rounded-2xl border border-white/80 p-5 shadow-sm space-y-4">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200/50 pb-3">
+    <div className="rounded-3xl border border-[#EAE3D5] bg-white p-6 shadow-[0_15px_40px_-15px_rgba(44,38,28,0.06)] space-y-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-[#F5F1E8]">
         <div>
-          <span className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold block">
-            Algebraic Operations
-          </span>
-          <span className="text-xs text-slate-500 font-sans">
-            Click any set operation to highlight its Venn region and filter matching respondents
-          </span>
+          <h4 className="text-base font-heading font-extrabold text-[#1C1B18]">
+            Set-Theoretic Algebraic Operations
+          </h4>
+          <p className="text-xs text-stone-500 font-sans">
+            Choose a boolean set operation to evaluate on student partitions
+          </p>
         </div>
 
-        {/* Live Cardinality Pill */}
         <div className="flex items-center gap-2">
-          <span className="text-xs font-montserrat text-slate-500">Result Size:</span>
-          <Badge variant="cobalt" size="md">
-            |Result| = {resultCardinality} ({((resultCardinality / totalUniverse) * 100).toFixed(1)}%)
+          <Badge variant="cobalt">
+            Result: {resultCardinality} / {totalUniverse} ({Math.round((resultCardinality / totalUniverse) * 100)}%)
           </Badge>
         </div>
       </div>
 
-      {/* Buttons Grid */}
       <div className="flex flex-wrap gap-2">
         {operations.map((op) => {
-          const isActive = activeOperation === op.id;
+          const isSelected = activeOperation === op.id;
+
           return (
             <button
               key={op.id}
+              type="button"
               onClick={() => onSelectOperation(op.id)}
-              className={`px-3 py-1.5 rounded-xl text-xs font-montserrat transition-all duration-200 flex items-center gap-1.5 ${
-                isActive
-                  ? "bg-blue-600 text-white font-semibold shadow-sm shadow-blue-500/20"
-                  : "glass-panel hover:bg-white text-slate-700 border border-slate-200/70"
+              className={`rounded-2xl px-4 py-2 text-xs font-sora font-semibold transition-all duration-200 border flex items-center gap-2 cursor-pointer ${
+                isSelected
+                  ? "bg-[#1C1B18] text-white border-[#1C1B18] shadow-xs scale-[1.02]"
+                  : "bg-[#FAF8F5] text-stone-700 border-[#EAE3D5] hover:bg-[#F5F1E8]"
               }`}
             >
-              <span className={isActive ? "text-blue-100 font-bold" : "text-blue-600 font-semibold"}>
-                {op.symbol}
+              <span>{op.symbol}</span>
+              <span className={`text-[10px] ${isSelected ? "text-stone-300" : "text-stone-400"}`}>
+                ({op.label})
               </span>
-              <span>{op.label}</span>
             </button>
           );
         })}

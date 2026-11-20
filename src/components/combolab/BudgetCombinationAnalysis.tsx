@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import { Card, CardHeader, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
+import { Callout } from "@/components/ui/Callout";
+import { KaTeXMath } from "@/components/ui/KaTeXMath";
 import {
   BUDGET_RANGES,
   type BudgetRange,
@@ -34,150 +35,208 @@ export function BudgetCombinationAnalysis({
   }, [analytics.combinations, activeBudget]);
 
   return (
-    <Card>
-      <CardHeader
-        title="Budget-Segmented Feature Combination Analysis"
-        subtitle="Comparing feature bundle choices across price sensitivity cohorts with rigorous denominator integrity"
-        badge={<Badge variant="cobalt">Stratified Combinatorics</Badge>}
-      />
-      <CardContent className="space-y-6">
-        {/* Budget Tier Selector Tabs */}
+    <div className="rounded-3xl border border-[#EAE3D5] bg-white p-6 shadow-xs text-[#1C1B18] space-y-6">
+      {/* Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[#F5F1E8] pb-4">
         <div>
-          <label className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold block mb-2.5">
-            Select Budget Segment
-          </label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-            {BUDGET_RANGES.map((range) => {
-              const count = analytics.budgetCohortSizes[range];
-              const isActive = activeBudget === range;
-              return (
-                <button
-                  key={range}
-                  onClick={() => setActiveBudget(range)}
-                  className={`p-3.5 rounded-2xl border text-left transition-all duration-200 ${
-                    isActive
-                      ? "border-blue-500 bg-blue-50/70 shadow-sm"
-                      : "border-slate-200/80 glass-panel hover:bg-white text-slate-700"
-                  }`}
-                >
-                  <span className="text-xs font-sora font-bold block text-slate-900">
-                    {range}
+          <div className="flex items-center gap-2.5">
+            <h3 className="text-base font-montserrat font-bold tracking-tight text-[#1C1B18]">
+              Budget-Segmented Feature Combination Analysis
+            </h3>
+            <Badge variant="cobalt">Stratified Combinatorics</Badge>
+          </div>
+          <p className="text-xs text-[#78716C] mt-1 font-sans">
+            Comparing feature bundle choices across price sensitivity cohorts with rigorous denominator integrity
+          </p>
+        </div>
+      </div>
+
+      {/* Budget Tier Selector Tabs */}
+      <div>
+        <label className="text-[11px] font-sora font-semibold uppercase tracking-wider text-[#78716C] block mb-2.5">
+          Select Budget Segment:
+        </label>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {BUDGET_RANGES.map((range) => {
+            const count = analytics.budgetCohortSizes[range];
+            const isActive = activeBudget === range;
+            return (
+              <button
+                key={range}
+                onClick={() => setActiveBudget(range)}
+                className={`p-3.5 rounded-2xl border text-left transition-all shadow-2xs ${
+                  isActive
+                    ? "border-[#1C1B18] bg-white ring-2 ring-[#1C1B18]"
+                    : "border-[#EAE3D5] bg-[#FAF8F5] hover:bg-white hover:border-[#1C1B18]"
+                }`}
+              >
+                <span className="text-xs font-montserrat font-bold block text-[#1C1B18]">
+                  {range}
+                </span>
+                <div className="flex items-center justify-between mt-1 text-[11px] font-sora">
+                  <span className="text-[#78716C]">Cohort:</span>
+                  <span
+                    className={`font-extrabold ${
+                      count > 0 ? "text-blue-700" : "text-[#A8A29E]"
+                    }`}
+                  >
+                    {count} {count === 1 ? "resp." : "resps."}
                   </span>
-                  <div className="flex items-center justify-between mt-1 text-[11px] font-montserrat">
-                    <span className="text-slate-500">Cohort Size:</span>
-                    <span
-                      className={`font-bold ${
-                        count > 0 ? "text-blue-700" : "text-slate-400"
-                      }`}
-                    >
-                      {count} {count === 1 ? "student" : "students"}
-                    </span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Tier Overview Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="rounded-2xl border border-[#EAE3D5] bg-[#FAF8F5] p-5 shadow-2xs">
+          <span className="text-[11px] font-sora font-semibold uppercase tracking-wider text-[#78716C] block">
+            Segment Sample Size (N_tier)
+          </span>
+          <div className="mt-2 font-sora text-3xl font-extrabold text-[#1C1B18]">
+            {tierCohortSize}
+          </div>
+          <p className="text-xs text-[#78716C] mt-1 font-sans">
+            Strict denominator for within-budget percentages
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-[#EAE3D5] bg-[#FAF8F5] p-5 shadow-2xs">
+          <span className="text-[11px] font-sora font-semibold uppercase tracking-wider text-blue-700 block">
+            Distinct Combinations Observed
+          </span>
+          <div className="mt-2 font-sora text-3xl font-extrabold text-blue-700">
+            {tierCombinations.length}
+          </div>
+          <p className="text-xs text-[#78716C] mt-1 font-sans">
+            Unique feature triplets in this price bracket
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-[#1C1B18] bg-[#1C1B18] p-5 shadow-2xs text-white">
+          <span className="text-[11px] font-sora font-semibold uppercase tracking-wider text-stone-300 block">
+            Full Cohort Share
+          </span>
+          <div className="mt-2 font-sora text-3xl font-extrabold text-[#FEF08A]">
+            {analytics.totalRespondents > 0
+              ? (
+                  (tierCohortSize / analytics.totalRespondents) *
+                  100
+                ).toFixed(1)
+              : 0}
+            %
+          </div>
+          <p className="text-xs text-stone-300 mt-1 font-sans">
+            {tierCohortSize} of {analytics.totalRespondents} total study participants
+          </p>
+        </div>
+      </div>
+
+      {/* Combinations Breakdown in Selected Tier */}
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <h4 className="text-xs font-montserrat font-bold uppercase tracking-wider text-[#1C1B18]">
+            Feature Combinations in {activeBudget}
+          </h4>
+          <span className="text-xs text-[#78716C] font-sora font-semibold bg-[#FAF8F5] px-2.5 py-1 rounded-full border border-[#EAE3D5]">
+            Denominator = {tierCohortSize}
+          </span>
+        </div>
+
+        {tierCohortSize === 0 ? (
+          <div className="p-10 text-center rounded-2xl border border-dashed border-[#EAE3D5] bg-[#FAF8F5]">
+            <p className="text-sm text-[#1C1B18] font-montserrat font-bold">
+              No respondents in {activeBudget}
+            </p>
+            <p className="text-xs text-[#78716C] mt-1 font-sans">
+              Within-tier percentage defaults to 0% with division-by-zero protection.
+            </p>
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {tierCombinations.map((combo) => {
+              const tierMetrics = combo.budgetBreakdown[activeBudget];
+              return (
+                <div
+                  key={combo.id}
+                  onClick={() => onSelectCombination?.(combo)}
+                  className="p-4 rounded-2xl border border-[#EAE3D5] bg-[#FAF8F5] hover:bg-white hover:border-[#1C1B18] cursor-pointer transition-all shadow-2xs space-y-3"
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#EAE3D5]/60 pb-2.5">
+                    <div className="flex items-center gap-2">
+                      <span className="font-sora text-xs font-bold text-[#1C1B18] bg-white px-2.5 py-0.5 rounded-full border border-[#EAE3D5]">
+                        {combo.id}
+                      </span>
+                      <div className="flex flex-wrap gap-1">
+                        {combo.features.map((f) => (
+                          <span
+                            key={f}
+                            className="text-[11px] font-sora font-medium text-[#1C1B18] bg-white px-2 py-0.5 rounded-md border border-[#EAE3D5]"
+                          >
+                            {f}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <span className="font-sora text-[11px] font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200">
+                        {tierMetrics.percentageWithinBudget}% of Tier
+                      </span>
+                      <span className="font-sora text-[11px] font-semibold text-[#78716C] bg-white px-2.5 py-1 rounded-full border border-[#EAE3D5]">
+                        {combo.observedPercentage}% Overall
+                      </span>
+                    </div>
                   </div>
-                </button>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#57534E] font-sans">
+                    <div>
+                      <span className="font-medium text-[#1C1B18]">
+                        Within-Tier Calculation:
+                      </span>{" "}
+                      <span className="font-sora text-blue-700 font-bold">
+                        {tierMetrics.count} / {tierCohortSize} respondents ={" "}
+                        {tierMetrics.percentageWithinBudget}%
+                      </span>
+                    </div>
+                    <div>
+                      <span className="font-medium text-[#1C1B18]">
+                        Full-Cohort Calculation:
+                      </span>{" "}
+                      <span className="font-sora text-[#78716C]">
+                        {tierMetrics.count} / {analytics.totalRespondents} respondents ={" "}
+                        {(
+                          (tierMetrics.count / analytics.totalRespondents) *
+                          100
+                        ).toFixed(2)}
+                        %
+                      </span>
+                    </div>
+                  </div>
+                </div>
               );
             })}
           </div>
-        </div>
+        )}
+      </div>
 
-        {/* Tier Overview Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="glass-panel rounded-2xl border border-white/80 p-5">
-            <span className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold block">
-              Segment Sample Size
-            </span>
-            <div className="mt-1 font-sora text-3xl font-extrabold text-slate-900">
-              {tierCohortSize}
-            </div>
-            <p className="text-xs text-slate-500 mt-1 font-sans">
-              Strict denominator for within-budget percentages
-            </p>
-          </div>
-
-          <div className="glass-panel rounded-2xl border border-white/80 p-5">
-            <span className="text-xs font-montserrat uppercase tracking-wider text-blue-700 font-semibold block">
-              Distinct Bundles Observed
-            </span>
-            <div className="mt-1 font-sora text-3xl font-extrabold text-blue-600">
-              {tierCombinations.length}
-            </div>
-            <p className="text-xs text-slate-500 mt-1 font-sans">
-              Unique feature triplets in this price bracket
-            </p>
-          </div>
-
-          <div className="glass-panel rounded-2xl border border-white/80 p-5">
-            <span className="text-xs font-montserrat uppercase tracking-wider text-emerald-700 font-semibold block">
-              Full Cohort Share
-            </span>
-            <div className="mt-1 font-sora text-3xl font-extrabold text-emerald-600">
-              {analytics.totalRespondents > 0
-                ? (
-                    (tierCohortSize / analytics.totalRespondents) *
-                    100
-                  ).toFixed(1)
-                : 0}
-              %
-            </div>
-            <p className="text-xs text-slate-500 mt-1 font-sans">
-              {tierCohortSize} of {analytics.totalRespondents} total survey participants
-            </p>
-          </div>
-        </div>
-
-        {/* Combinations Breakdown in Selected Tier */}
-        <div>
-          <div className="flex items-center justify-between mb-3">
-            <h4 className="text-sm font-sora font-bold text-slate-900">
-              Observed Feature Bundles in {activeBudget}
-            </h4>
-            <span className="text-xs font-montserrat text-slate-500">
-              {tierCombinations.length} combinations active
-            </span>
-          </div>
-
-          {tierCombinations.length === 0 ? (
-            <div className="p-8 text-center rounded-2xl glass-panel border border-dashed border-slate-300 text-slate-500 text-xs font-sans">
-              No respondents in this budget tier have selected an active feature combination.
-            </div>
-          ) : (
-            <div className="space-y-2.5">
-              {tierCombinations.map((combo) => {
-                const breakdown = combo.budgetBreakdown[activeBudget];
-                return (
-                  <div
-                    key={combo.key || combo.id}
-                    onClick={() => onSelectCombination?.(combo)}
-                    className="p-4 rounded-2xl glass-panel border border-white/80 hover:bg-white transition-all cursor-pointer flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs"
-                  >
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      {combo.features.map((f) => (
-                        <span
-                          key={f}
-                          className="px-2.5 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-montserrat font-medium"
-                        >
-                          {f}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex items-center gap-4 shrink-0 font-montserrat">
-                      <div className="text-right">
-                        <span className="text-xs font-bold text-slate-900 block">
-                          {breakdown.count} {breakdown.count === 1 ? "student" : "students"}
-                        </span>
-                        <span className="text-[10px] text-slate-500">
-                          {breakdown.percentageWithinBudget.toFixed(1)}% of tier
-                        </span>
-                      </div>
-                      <span className="text-slate-400">&rarr;</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      </CardContent>
-    </Card>
+      {/* Methodological Alert on Subgroup Denominators */}
+      <Callout variant="warning" title="Methodological Safeguard: Denominator Integrity">
+        When analyzing sub-populations (such as budget tiers), reporting
+        percentages requires using the specific stratum size (
+        <KaTeXMath math="N_{\text{tier}}" />
+        ) as the denominator. For instance, in the &quot;{activeBudget}&quot;
+        segment, frequencies are divided by <KaTeXMath math={`N = ${tierCohortSize}`} />
+        . With small subgroup samples, individual preferences produce larger percentage
+        swings (e.g., 1 respondent ={" "}
+        {tierCohortSize > 0
+          ? ((1 / tierCohortSize) * 100).toFixed(1)
+          : "0.0"}
+        %). Subgroup percentages must never be confused with overall cohort
+        proportions.
+      </Callout>
+    </div>
   );
 }

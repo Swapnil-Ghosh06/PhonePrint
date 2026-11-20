@@ -45,9 +45,9 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
   const columns: Column<SurveyResponse>[] = [
     {
       key: "response_id",
-      header: "Respondent ID",
+      header: "ID",
       render: (r) => (
-        <span className="font-montserrat font-semibold text-slate-900 bg-slate-100/80 px-2 py-0.5 rounded-md border border-slate-200/60 text-xs">
+        <span className="font-sora font-semibold text-slate-900 bg-slate-100/80 px-2 py-0.5 rounded-md border border-slate-200/60 text-xs">
           {r.response_id}
         </span>
       ),
@@ -65,20 +65,20 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
       key: "budget_range",
       header: "Budget Tier",
       render: (r) => (
-        <span className="font-montserrat text-xs text-slate-600 font-medium">
+        <span className="font-sora text-[11px] font-medium text-slate-600 bg-slate-50 px-2 py-0.5 rounded-full border border-slate-200/50">
           {r.budget_range}
         </span>
       ),
     },
     {
       key: "preferred_features",
-      header: "Selected Features (3 Distinct)",
+      header: "Selected Features (Exactly 3 Distinct)",
       render: (r) => (
         <div className="flex flex-wrap gap-1.5">
           {r.preferred_features.map((f, i) => (
             <span
               key={i}
-              className="inline-block rounded-full bg-blue-50/80 border border-blue-200/60 px-2.5 py-0.5 text-[11px] text-blue-700 font-medium font-sans"
+              className="inline-block rounded-full bg-blue-50/80 border border-blue-200/60 px-2.5 py-0.5 text-[11px] text-blue-800 font-sans font-medium"
             >
               {f}
             </span>
@@ -97,19 +97,18 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
     },
     {
       key: "os_preference",
-      header: "OS Preference",
+      header: "OS",
       render: (r) => (
-        <Badge variant={r.os_preference === "iOS" ? "cobalt" : "lime"}>
+        <span className="font-sora text-[11px] font-medium text-slate-500">
           {r.os_preference}
-        </Badge>
+        </span>
       ),
     },
   ];
 
   return (
     <div className="space-y-4">
-      {/* Filters and search in a glass bar */}
-      <div className="glass-panel rounded-2xl p-4 border border-white/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <Tabs
           items={brandTabs}
           activeId={activeBrandFilter}
@@ -117,32 +116,40 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
           size="sm"
         />
 
-        <div className="relative min-w-[240px]">
+        <div className="relative w-full sm:w-72">
           <input
             type="text"
-            placeholder="Search respondents or features..."
+            placeholder="Search respondent or feature..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full glass-panel rounded-xl px-3.5 py-1.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 border border-slate-200/80 transition-all"
+            className="w-full rounded-full border border-slate-200 bg-white/80 backdrop-blur-md px-4 py-2 text-xs text-slate-800 placeholder-slate-400 shadow-xs focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-sm text-slate-400 hover:text-slate-600"
             >
-              ×
+              &times;
             </button>
           )}
         </div>
       </div>
 
-      {/* Responses Data Table */}
       <DataTable
         columns={columns}
         data={filteredResponses}
         keyExtractor={(r) => r.response_id}
-        emptyMessage="No respondents matched the current filters."
+        emptyMessage="No respondents match the active filter criteria"
       />
+
+      <div className="flex items-center justify-between text-[11px] text-slate-400 px-2 font-sans">
+        <span>
+          Showing <strong className="text-slate-600 font-sora">{filteredResponses.length}</strong> of {responses.length} respondent records
+        </span>
+        <span className="font-sora text-[10px] text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+          Validated via Zod SurveyResponseSchema
+        </span>
+      </div>
     </div>
   );
 }

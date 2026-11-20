@@ -22,26 +22,26 @@ export function Button({
 }: ButtonProps) {
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 active:scale-[0.98] shadow-md shadow-blue-500/20 border border-blue-500/40",
+      "bg-[#1C1B18] text-white hover:bg-black active:scale-[0.98] shadow-xs border border-[#1C1B18] disabled:opacity-50",
     secondary:
-      "glass-panel text-slate-800 hover:bg-white active:scale-[0.98] shadow-sm hover:shadow",
+      "bg-white text-stone-800 hover:bg-[#F5F1E8] active:bg-[#EAE3D5] border border-[#EAE3D5] shadow-2xs hover:border-stone-400",
     lime:
-      "bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-700 hover:to-teal-700 active:scale-[0.98] shadow-md shadow-emerald-500/20 border border-emerald-500/40",
+      "bg-emerald-700 text-white hover:bg-emerald-800 active:bg-emerald-900 shadow-xs border border-emerald-700 disabled:opacity-50",
     outline:
-      "bg-white/60 backdrop-blur-md text-slate-700 border border-slate-300/80 hover:bg-white hover:border-slate-400 hover:text-slate-900 active:scale-[0.98]",
+      "bg-white/90 text-stone-700 border border-[#EAE3D5] hover:bg-white hover:border-stone-400 active:bg-[#F5F1E8] shadow-2xs",
     ghost:
-      "bg-transparent text-slate-600 hover:bg-slate-100/70 hover:text-slate-900 active:bg-slate-200/60",
+      "bg-transparent text-stone-600 hover:bg-[#F5F1E8] hover:text-[#1C1B18] active:bg-[#EAE3D5]",
   };
 
   const sizeStyles: Record<ButtonSize, string> = {
-    sm: "px-3 py-1.5 text-xs gap-1.5 rounded-xl font-montserrat font-medium",
-    md: "px-4 py-2 text-xs sm:text-sm gap-2 rounded-xl font-montserrat font-semibold",
-    lg: "px-5 py-2.5 text-sm sm:text-base gap-2.5 rounded-2xl font-montserrat font-semibold",
+    sm: "px-3.5 py-1.5 text-xs gap-1.5 rounded-full font-sora font-semibold",
+    md: "px-4.5 py-2 text-xs sm:text-sm gap-2 rounded-full font-sora font-semibold",
+    lg: "px-6 py-2.5 text-sm gap-2.5 rounded-full font-sora font-bold",
   };
 
   return (
     <button
-      className={`inline-flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 disabled:pointer-events-none disabled:opacity-50 ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
+      className={`inline-flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 disabled:pointer-events-none disabled:opacity-50 cursor-pointer ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
       disabled={disabled}
       {...props}
     >

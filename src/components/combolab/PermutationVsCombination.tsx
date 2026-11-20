@@ -26,6 +26,7 @@ export function PermutationVsCombination() {
 
   const toggleFeature = (feature: SmartphoneFeature) => {
     if (selectedFeatures.includes(feature)) {
+      // Don't deselect below 3
       return;
     }
     // Replace the first feature and shift
@@ -43,10 +44,10 @@ export function PermutationVsCombination() {
         {/* Interactive Feature Selector */}
         <div>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold">
+            <span className="text-xs font-mono uppercase tracking-wider text-stone-500">
               Select 3 Features to Compare:
             </span>
-            <span className="text-xs font-montserrat text-blue-600 font-medium">
+            <span className="text-xs font-mono text-stone-500">
               Active Triplet: {selectedFeatures.length} / 3
             </span>
           </div>
@@ -57,10 +58,10 @@ export function PermutationVsCombination() {
                 <button
                   key={feature}
                   onClick={() => toggleFeature(feature)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-montserrat font-medium transition-all duration-200 ${
+                  className={`px-3 py-1.5 rounded-md text-xs font-medium transition-all ${
                     isSelected
-                      ? "bg-blue-600 text-white shadow-sm shadow-blue-500/20"
-                      : "glass-panel hover:bg-white text-slate-700 border border-slate-200/80"
+                      ? "bg-cobalt-600 text-white shadow-none"
+                      : "bg-[#FAF9F5] hover:bg-stone-100 text-stone-700 border border-stone-200"
                   }`}
                 >
                   {isSelected ? "✓ " : "+ "}
@@ -71,109 +72,118 @@ export function PermutationVsCombination() {
           </div>
         </div>
 
-        {/* Side-by-side comparison */}
+        {/* Side-by-side or responsive grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Combinations (Unordered) */}
-          <div className="glass-panel rounded-2xl p-5 space-y-4 border border-white/80">
-            <div className="flex items-center justify-between border-b border-slate-200/50 pb-3">
+          <div className="rounded-2xl border border-emerald-200/70 bg-emerald-50/30 backdrop-blur-md p-6 space-y-4 shadow-xs">
+            <div className="flex items-center justify-between border-b border-emerald-200/60 pb-3">
               <div>
-                <span className="text-[11px] font-montserrat uppercase tracking-wider text-emerald-700 font-bold">
+                <span className="text-[11px] font-sora font-semibold uppercase tracking-wider text-emerald-800">
                   Combination (Unordered Set)
                 </span>
-                <h4 className="text-base font-sora font-bold text-slate-900 mt-0.5">
+                <h4 className="text-base font-heading font-extrabold text-slate-900 mt-0.5">
                   Order Does NOT Matter
                 </h4>
               </div>
               <Badge variant="lime">C(3, 3) = 1 Outcome</Badge>
             </div>
 
-            <div className="glass-panel rounded-xl bg-white/70 p-4 border border-slate-200/60 shadow-xs space-y-3">
-              <span className="text-xs font-montserrat text-slate-500 uppercase tracking-wider font-semibold block">
+            <div className="rounded-xl bg-white/90 p-4 border border-emerald-100 shadow-2xs space-y-3">
+              <span className="text-[11px] font-sora text-slate-500 uppercase tracking-wider block font-semibold">
                 Mathematical Set Notation:
               </span>
-              <div className="flex flex-wrap items-center gap-1.5 p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/60 font-montserrat text-xs">
+              <div className="flex flex-wrap items-center gap-1.5 p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/60 font-sora text-xs">
                 <span className="text-slate-400 font-bold text-base">&#123;</span>
                 {selectedFeatures.map((f, i) => (
                   <React.Fragment key={f}>
-                    <span className="font-semibold text-blue-700 bg-white px-2 py-1 rounded-lg border border-slate-200/60 shadow-xs">
+                    <span className="font-semibold text-blue-700 bg-white px-2.5 py-1 rounded-full border border-blue-200/60 shadow-2xs">
                       {f}
                     </span>
                     {i < selectedFeatures.length - 1 && (
-                      <span className="text-slate-400 font-bold">,</span>
+                      <span className="text-slate-400">,</span>
                     )}
                   </React.Fragment>
                 ))}
                 <span className="text-slate-400 font-bold text-base">&#125;</span>
               </div>
-              <p className="text-xs text-slate-600 font-sans leading-relaxed">
-                Represents a single unique bundle of user priorities. Reordering the elements inside braces yields the exact same set:
+
+              <p className="text-xs text-slate-600 leading-relaxed font-sans">
+                In set theory, elements within braces have no intrinsic ordering:
+                <br />
+                <code className="text-xs font-sora font-bold text-slate-900 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 mt-1 inline-block">
+                  &#123;A, B, C&#125; = &#123;B, A, C&#125; = &#123;C, B, A&#125;
+                </code>
               </p>
-              <div className="text-xs font-montserrat text-slate-700 bg-white/80 p-2.5 rounded-lg border border-slate-200/60">
-                &#123;A, B, C&#125; = &#123;B, A, C&#125; = &#123;C, B, A&#125; (Cardinality = 1)
-              </div>
             </div>
 
-            <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-xl p-3.5 text-xs text-emerald-950 font-sans leading-relaxed">
-              <strong>PhonePrint Modeling Principle:</strong> Because consumers evaluate holistic hardware-software utility, checkbox selection order in the survey introduces zero product differentiation.
+            <div className="rounded-xl bg-white/90 p-4 border border-emerald-100 text-xs text-slate-700 space-y-1.5 shadow-2xs">
+              <span className="font-heading font-bold text-emerald-950 block uppercase text-[11px]">
+                PhonePrint Application Context:
+              </span>
+              <p className="text-slate-600 leading-relaxed font-sans">
+                The PhonePrint survey asks students:{" "}
+                <em>&quot;Choose your top three priority smartphone features.&quot;</em>{" "}
+                Whether a respondent clicks &quot;Battery Life&quot; first or
+                &quot;Camera Quality&quot; first, their smartphone preference
+                bundle is identical. They form <strong>1 single combination</strong>.
+              </p>
             </div>
           </div>
 
           {/* Permutations (Ordered) */}
-          <div className="glass-panel rounded-2xl p-5 space-y-4 border border-white/80">
-            <div className="flex items-center justify-between border-b border-slate-200/50 pb-3">
+          <div className="rounded-2xl border border-blue-200/70 bg-blue-50/30 backdrop-blur-md p-6 space-y-4 shadow-xs">
+            <div className="flex items-center justify-between border-b border-blue-200/60 pb-3">
               <div>
-                <span className="text-[11px] font-montserrat uppercase tracking-wider text-purple-700 font-bold">
+                <span className="text-[11px] font-sora font-semibold uppercase tracking-wider text-blue-800">
                   Permutations (Ordered Sequences)
                 </span>
-                <h4 className="text-base font-sora font-bold text-slate-900 mt-0.5">
-                  Order DOES Matter
+                <h4 className="text-base font-heading font-extrabold text-slate-900 mt-0.5">
+                  Order Matters (Ranked)
                 </h4>
               </div>
-              <Badge variant="cobalt">3! = {permutations.length} Sequences</Badge>
+              <Badge variant="cobalt">P(3, 3) = 3! = 6 Outcomes</Badge>
             </div>
 
-            <div className="space-y-2">
-              <span className="text-xs font-montserrat text-slate-500 uppercase tracking-wider font-semibold block">
-                All 6 Distinct Sequences (P(3, 3) = 6):
+            <div className="rounded-xl bg-white/90 p-4 border border-blue-100 shadow-2xs space-y-2">
+              <span className="text-[11px] font-sora text-slate-500 uppercase tracking-wider block font-semibold">
+                All 3! = 6 Distinct Ordered Sequences:
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-52 overflow-y-auto pr-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                 {permutations.map((perm, idx) => (
                   <div
                     key={idx}
-                    className="p-2.5 rounded-xl border border-slate-200/70 bg-white/70 font-montserrat text-xs flex items-center justify-between"
+                    className="flex items-center gap-1.5 p-2 rounded bg-[#FAF9F5] border border-stone-200 font-mono text-[11px]"
                   >
-                    <span className="font-bold text-purple-700 text-[10px]">
+                    <span className="font-bold text-cobalt-600 w-5">
                       #{idx + 1}
                     </span>
-                    <span className="text-slate-700 truncate ml-2">
-                      ({perm[0]?.split(" ")[0]}, {perm[1]?.split(" ")[0]}, {perm[2]?.split(" ")[0]})
+                    <span className="text-stone-400">(</span>
+                    <span className="truncate text-stone-800 font-medium">
+                      {perm.map((f) => f.split(" ")[0]).join(", ")}
                     </span>
+                    <span className="text-stone-400">)</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-purple-50/70 border border-purple-200/80 rounded-xl p-3.5 text-xs text-purple-950 font-sans leading-relaxed">
-              If survey responses were ordered sequences (e.g. ranked ballots), the choice space would explode by a factor of 3! = 6 to <strong>P(7, 3) = 210</strong>, creating artificial data sparsity.
+            <div className="rounded-md bg-white p-3.5 border border-stone-200 text-xs text-stone-700 space-y-1.5">
+              <span className="font-mono text-[11px] font-bold text-cobalt-900 block uppercase">
+                Combinatorial Relationship:
+              </span>
+              <p className="text-stone-600 leading-relaxed">
+                To count combinations without overcounting, we divide permutations by{" "}
+                <KaTeXMath math="r!" />:
+              </p>
+              <div className="pt-1">
+                <KaTeXMath
+                  math="C(n, r) = \frac{P(n, r)}{r!} = \frac{6}{3!} = \frac{6}{6} = 1"
+                  block
+                  className="text-xs font-semibold text-stone-900"
+                />
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Formal Binomial Coefficient Identity */}
-        <div className="glass-panel rounded-2xl p-5 border border-white/80">
-          <span className="text-xs font-montserrat font-semibold uppercase tracking-wider text-slate-500 block mb-2">
-            Formal Algebraic Connection
-          </span>
-          <div className="bg-white/80 rounded-xl p-3 border border-slate-200/60 my-2">
-            <KaTeXMath
-              math="C(n, r) = \frac{P(n, r)}{r!} = \frac{n!}{r!(n - r)!}"
-              block
-              className="text-slate-900 font-bold"
-            />
-          </div>
-          <p className="text-xs text-slate-600 font-sans leading-relaxed mt-2">
-            Dividing by <KaTeXMath math="r! = 3! = 6" /> collapses the 6 distinct ordering permutations into exactly 1 unique customer preference bundle.
-          </p>
         </div>
       </CardContent>
     </Card>

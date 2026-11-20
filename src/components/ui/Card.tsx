@@ -14,8 +14,8 @@ export function Card({
 }: CardProps) {
   return (
     <div
-      className={`glass-panel rounded-2xl border border-white/80 text-slate-800 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 ${
-        hoverable ? "glass-panel-hover" : ""
+      className={`rounded-3xl border border-[#EAE3D5] bg-white text-stone-800 shadow-[0_8px_30px_rgba(44,38,28,0.04)] transition-all duration-300 ${
+        hoverable ? "hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(44,38,28,0.08)] hover:border-stone-400" : ""
       } ${className}`}
       {...props}
     >
@@ -39,17 +39,17 @@ export function CardHeader({
 }) {
   return (
     <div
-      className={`flex items-start justify-between gap-4 border-b border-slate-200/50 px-6 py-4.5 bg-white/40 rounded-t-2xl ${className}`}
+      className={`flex items-start justify-between gap-4 border-b border-[#F5F1E8] px-6 py-4.5 bg-[#FAF8F5]/70 rounded-t-3xl ${className}`}
     >
       <div className="space-y-1">
         <div className="flex items-center gap-2.5">
-          <h3 className="text-base font-sora font-semibold tracking-tight text-slate-900">
+          <h3 className="text-base font-heading font-extrabold tracking-tight text-[#1C1B18]">
             {title}
           </h3>
           {badge}
         </div>
         {subtitle && (
-          <p className="text-xs text-slate-500 font-sans leading-relaxed">
+          <p className="text-xs text-stone-500 font-sans">
             {subtitle}
           </p>
         )}
@@ -66,7 +66,7 @@ export function CardContent({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <div className={`p-6 text-slate-700 ${className}`}>{children}</div>;
+  return <div className={`p-6 ${className}`}>{children}</div>;
 }
 
 export function CardFooter({
@@ -78,7 +78,7 @@ export function CardFooter({
 }) {
   return (
     <div
-      className={`border-t border-slate-200/50 bg-slate-50/50 px-6 py-3.5 text-xs text-slate-600 rounded-b-2xl ${className}`}
+      className={`flex items-center justify-between border-t border-[#F5F1E8] px-6 py-4 bg-[#FAF8F5]/40 rounded-b-3xl ${className}`}
     >
       {children}
     </div>
