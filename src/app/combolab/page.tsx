@@ -4,8 +4,6 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
-import { Callout } from "@/components/ui/Callout";
 import { loadSurveyDataset, getActiveDatasetInfo } from "@/lib/data/loader";
 import { analyzeFeatureCombinations } from "@/lib/data/combinationAnalytics";
 import type { FeatureCombinationRecord } from "@/types/math";
@@ -50,17 +48,15 @@ export default function ComboLabPage() {
         description="Interactive laboratory exploring binomial coefficients C(n, r), permutations P(n, r), and empirical survey frequencies. Analyzes the discrete space of C(7, 3) = 35 theoretical triplets from the 7 canonical smartphone features."
         badge={{ text: datasetInfo.badgeText, variant: datasetInfo.isDemo ? "lime" : "cobalt" }}
         actions={
-          <div className="flex items-center gap-2">
-            <span className={`font-mono text-xs font-bold px-2.5 py-1 rounded-xs border ${
-              datasetInfo.isDemo
-                ? "text-stone-800 bg-stone-100 border-stone-300/80"
-                : "text-cobalt-800 bg-cobalt-50 border-cobalt-200"
-            }`}>
-              {datasetInfo.tagText}
-            </span>
+          <div className="flex items-center gap-2.5">
             <Link href="/setlab">
               <Button variant="outline" size="sm">
                 &larr; SetLab
+              </Button>
+            </Link>
+            <Link href="/experiment-studio">
+              <Button variant="primary" size="sm">
+                Experiment Studio &rarr;
               </Button>
             </Link>
           </div>
@@ -68,133 +64,147 @@ export default function ComboLabPage() {
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
+        {/* Presentation Infographic Spotlight */}
+        <div className="glass-card rounded-3xl p-6 sm:p-7 border border-white/90 shadow-[0_12px_36px_rgb(0,0,0,0.05)]">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-2xl">
+              <span className="font-montserrat text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-100">
+                PRESENTATION ESSENTIAL · FEATURE COMBINATORICS
+              </span>
+              <h2 className="text-xl sm:text-2xl font-sora font-extrabold text-slate-900 tracking-tight">
+                Why Order Does Not Matter: C(7,3) vs P(7,3)
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 font-sans leading-relaxed">
+                When consumers choose mobile phone features, selecting (Battery, Camera, Display) represents the exact same preference profile as (Display, Camera, Battery). Thus, we model the market using <strong>Combinations C(7,3) = 35</strong> rather than <strong>Permutations P(7,3) = 210</strong>.
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3 shrink-0">
+              <div className="glass-panel rounded-2xl p-4 border border-white/90 text-center min-w-[120px]">
+                <span className="text-[11px] font-montserrat uppercase text-slate-500 font-semibold">
+                  Triplets
+                </span>
+                <span className="font-sora text-3xl font-extrabold text-blue-600 mt-1 block">
+                  35
+                </span>
+                <span className="text-[10px] font-montserrat text-slate-400">
+                  Feature Bundles
+                </span>
+              </div>
+              <div className="glass-panel rounded-2xl p-4 border border-white/90 text-center min-w-[120px]">
+                <span className="text-[11px] font-montserrat uppercase text-slate-500 font-semibold">
+                  Observed
+                </span>
+                <span className="font-sora text-3xl font-extrabold text-emerald-600 mt-1 block">
+                  {analytics.totalObservedCombinations}
+                </span>
+                <span className="text-[10px] font-montserrat text-slate-400">
+                  Active in Survey
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Navigation / Focus Tabs */}
-        <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-xs bg-[#FAF9F5] border border-stone-300/80">
+        <div className="glass-panel rounded-2xl p-1.5 border border-white/80 shadow-sm flex flex-wrap items-center gap-1.5">
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "all"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
             All Modules Overview
           </button>
           <button
             onClick={() => setActiveTab("calculator")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "calculator"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
             nCr Calculator
           </button>
           <button
             onClick={() => setActiveTab("permutations")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "permutations"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
             Permutations vs Combinations
           </button>
           <button
             onClick={() => setActiveTab("explorer")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "explorer"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
             35-Triplet Space Explorer
           </button>
           <button
             onClick={() => setActiveTab("frequency")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "frequency"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
             Frequency Ranking &amp; Voids
           </button>
           <button
             onClick={() => setActiveTab("budget")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "budget"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
             Budget Stratification
           </button>
           <button
             onClick={() => setActiveTab("theory")}
-            className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-all ${
+            className={`px-3.5 py-2 rounded-xl text-xs font-montserrat transition-all duration-200 ${
               activeTab === "theory"
-                ? "bg-white text-stone-900 border border-stone-300/80 shadow-none font-semibold"
-                : "text-stone-600 hover:text-stone-900 hover:bg-white/60"
+                ? "bg-white text-blue-600 font-semibold shadow-sm border border-blue-100/60"
+                : "text-slate-600 hover:text-slate-900 hover:bg-white/50 font-medium"
             }`}
           >
-            Curriculum Theory
+            Pedagogical Theory
           </button>
         </div>
 
-        {/* Section 1: nCr Calculator */}
+        {/* Content based on selected tab */}
         {(activeTab === "all" || activeTab === "calculator") && (
-          <section id="calculator" className="space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-stone-200">
-              <h2 className="text-base font-serif font-bold text-stone-900 tracking-tight">
-                1. Combinations Calculator &amp; Factorial Simplification
-              </h2>
-              <Badge variant="cobalt">Interactive Math</Badge>
-            </div>
+          <section className="space-y-4">
             <CombinationCalculator />
           </section>
         )}
 
-        {/* Section 2: Permutation vs Combination Explainer */}
         {(activeTab === "all" || activeTab === "permutations") && (
-          <section id="permutations" className="space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-stone-200">
-              <h2 className="text-base font-serif font-bold text-stone-900 tracking-tight">
-                2. Permutations vs Combinations
-              </h2>
-              <Badge variant="lime">Order Invariance</Badge>
-            </div>
+          <section className="space-y-4">
             <PermutationVsCombination />
           </section>
         )}
 
-        {/* Section 3: Feature Combination Explorer (All 35 Triplets) */}
         {(activeTab === "all" || activeTab === "explorer") && (
-          <section id="explorer" className="space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-stone-200">
-              <h2 className="text-base font-serif font-bold text-stone-900 tracking-tight">
-                3. The C(7, 3) = 35 Feature Triplet Space
-              </h2>
-              <Badge variant="cobalt">Theoretical vs Observed</Badge>
-            </div>
+          <section className="space-y-4">
             <FeatureCombinationExplorer
               combinations={analytics.combinations}
-              totalRespondents={analytics.totalRespondents}
-              selectedCombinationId={selectedCombination?.id}
+              totalRespondents={responses.length}
               onSelectCombination={(combo) => setSelectedCombination(combo)}
             />
           </section>
         )}
 
-        {/* Section 4: Frequency Analysis & Unobserved Voids */}
         {(activeTab === "all" || activeTab === "frequency") && (
-          <section id="frequency" className="space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-stone-200">
-              <h2 className="text-base font-serif font-bold text-stone-900 tracking-tight">
-                4. Empirical Triplet Frequency Ranking
-              </h2>
-              <Badge variant="lime">Survey Observations</Badge>
-            </div>
+          <section className="space-y-4">
             <CombinationFrequencyAnalysis
               analytics={analytics}
               onSelectCombination={(combo) => setSelectedCombination(combo)}
@@ -202,15 +212,8 @@ export default function ComboLabPage() {
           </section>
         )}
 
-        {/* Section 5: Budget-Based Combination Analysis */}
         {(activeTab === "all" || activeTab === "budget") && (
-          <section id="budget" className="space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-stone-200">
-              <h2 className="text-base font-serif font-bold text-stone-900 tracking-tight">
-                5. Price Tier Stratification &amp; Denominator Integrity
-              </h2>
-              <Badge variant="cobalt">Subgroup Analysis</Badge>
-            </div>
+          <section className="space-y-4">
             <BudgetCombinationAnalysis
               analytics={analytics}
               onSelectCombination={(combo) => setSelectedCombination(combo)}
@@ -218,40 +221,21 @@ export default function ComboLabPage() {
           </section>
         )}
 
-        {/* Section 6: Curriculum Learning Foundation */}
         {(activeTab === "all" || activeTab === "theory") && (
-          <section id="theory" className="space-y-4">
-            <div className="flex items-center justify-between pb-2 border-b border-stone-200">
-              <h2 className="text-base font-serif font-bold text-stone-900 tracking-tight">
-                6. Undergraduate Curriculum Learning Reference
-              </h2>
-              <Badge variant="outline">Formal Mathematics</Badge>
-            </div>
+          <section className="space-y-4">
             <CombinatoricsLearningPanel />
           </section>
         )}
 
-        {/* Global Academic Callout */}
-        <Callout
-          variant="highlight"
-          title="PhonePrint Combinatorial Architecture Summary"
-        >
-          PhonePrint grounds smartphone preference research in discrete
-          mathematics. Selecting 3 features from 7 canonical options establishes a
-          finite parameter space of exactly 35 unordered combinations. In this{" "}
-          cohort of {responses.length} student respondents ({datasetInfo.notes || "SIMULATED CAMPUS DATA — N=30"}),{" "}
-          {analytics.totalObservedCombinations} combinations are populated while{" "}
-          {analytics.totalUnobservedCombinations} remain unobserved voids, demonstrating how finite sampling interacts
-          with multi-attribute combinatorial spaces.
-        </Callout>
+        {/* Detail Modal for Selected Combination */}
+        {selectedCombination && (
+          <CombinationDetailModal
+            combination={selectedCombination}
+            allResponses={responses}
+            onClose={() => setSelectedCombination(null)}
+          />
+        )}
       </div>
-
-      {/* Modal / Inspector for selected combination */}
-      <CombinationDetailModal
-        combination={selectedCombination}
-        onClose={() => setSelectedCombination(null)}
-        allResponses={responses}
-      />
     </div>
   );
 }

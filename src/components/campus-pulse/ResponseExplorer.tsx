@@ -47,7 +47,7 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
       key: "response_id",
       header: "Respondent ID",
       render: (r) => (
-        <span className="font-mono font-semibold text-stone-900">
+        <span className="font-montserrat font-semibold text-slate-900 bg-slate-100/80 px-2 py-0.5 rounded-md border border-slate-200/60 text-xs">
           {r.response_id}
         </span>
       ),
@@ -65,20 +65,20 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
       key: "budget_range",
       header: "Budget Tier",
       render: (r) => (
-        <span className="font-mono text-[11px] text-stone-600">
+        <span className="font-montserrat text-xs text-slate-600 font-medium">
           {r.budget_range}
         </span>
       ),
     },
     {
       key: "preferred_features",
-      header: "Selected Features (Exactly 3 Distinct)",
+      header: "Selected Features (3 Distinct)",
       render: (r) => (
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1.5">
           {r.preferred_features.map((f, i) => (
             <span
               key={i}
-              className="inline-block rounded bg-stone-100 px-1.5 py-0.5 text-[10px] text-stone-700 font-medium"
+              className="inline-block rounded-full bg-blue-50/80 border border-blue-200/60 px-2.5 py-0.5 text-[11px] text-blue-700 font-medium font-sans"
             >
               {f}
             </span>
@@ -90,25 +90,26 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
       key: "primary_use",
       header: "Primary Use",
       render: (r) => (
-        <span className="text-stone-600 text-xs font-sans">
+        <span className="text-slate-600 text-xs font-sans">
           {r.primary_use}
         </span>
       ),
     },
     {
       key: "os_preference",
-      header: "OS",
+      header: "OS Preference",
       render: (r) => (
-        <span className="font-mono text-[11px] text-stone-500">
+        <Badge variant={r.os_preference === "iOS" ? "cobalt" : "lime"}>
           {r.os_preference}
-        </span>
+        </Badge>
       ),
     },
   ];
 
   return (
-    <div className="space-y-3.5">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+    <div className="space-y-4">
+      {/* Filters and search in a glass bar */}
+      <div className="glass-panel rounded-2xl p-4 border border-white/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
         <Tabs
           items={brandTabs}
           activeId={activeBrandFilter}
@@ -116,40 +117,32 @@ export function ResponseExplorer({ responses }: ResponseExplorerProps) {
           size="sm"
         />
 
-        <div className="relative w-full sm:w-64">
+        <div className="relative min-w-[240px]">
           <input
             type="text"
-            placeholder="Search respondent or feature..."
+            placeholder="Search respondents or features..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full rounded-md border border-stone-200 bg-white px-3 py-1.5 text-xs text-stone-800 placeholder-stone-400 shadow-2xs focus:border-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-400"
+            className="w-full glass-panel rounded-xl px-3.5 py-1.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 border border-slate-200/80 transition-all"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery("")}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs text-stone-400 hover:text-stone-600"
+              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs"
             >
-              &times;
+              ×
             </button>
           )}
         </div>
       </div>
 
+      {/* Responses Data Table */}
       <DataTable
         columns={columns}
         data={filteredResponses}
         keyExtractor={(r) => r.response_id}
-        emptyMessage="No respondents match the active filter criteria"
+        emptyMessage="No respondents matched the current filters."
       />
-
-      <div className="flex items-center justify-between text-[11px] text-stone-400 px-1 font-sans">
-        <span>
-          Showing {filteredResponses.length} of {responses.length} respondent records
-        </span>
-        <span className="font-mono text-[10px] text-stone-400">
-          Validated via Zod SurveyResponseSchema
-        </span>
-      </div>
     </div>
   );
 }

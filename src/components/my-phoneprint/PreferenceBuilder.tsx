@@ -99,13 +99,13 @@ export function PreferenceBuilder({
   const isFeatureCountValid = features.length === 3;
 
   return (
-    <Card className="border-stone-300/80 shadow-none">
+    <Card>
       <CardHeader
         title="Construct Your Preference Vector"
         subtitle="Specify target brand, budget tier, and exactly three priority features"
         badge={
           isFeatureCountValid ? (
-            <Badge variant="lime">3 of 3 Features Selected</Badge>
+            <Badge variant="lime">3 of 3 Selected</Badge>
           ) : (
             <Badge variant="warning">{features.length} of 3 Selected</Badge>
           )
@@ -114,10 +114,10 @@ export function PreferenceBuilder({
       <CardContent className="space-y-6">
         {/* Quick Persona Presets */}
         <div>
-          <label className="text-[10px] font-mono uppercase tracking-wider text-stone-500 block mb-2 font-bold">
-            [ BENCHMARK PRESETS ]
+          <label className="text-xs font-montserrat uppercase tracking-wider text-slate-500 block mb-2 font-semibold">
+            Quick Persona Presets
           </label>
-          <div className="flex flex-wrap gap-1.5">
+          <div className="flex flex-wrap gap-2">
             {PRESET_OPTIONS.map((preset) => {
               const isActive =
                 brand === preset.profile.brand &&
@@ -127,10 +127,10 @@ export function PreferenceBuilder({
                 <button
                   key={preset.label}
                   onClick={() => onApplyPreset(preset.profile)}
-                  className={`px-3 py-1.5 rounded-xs text-xs font-medium transition-colors ${
+                  className={`px-3.5 py-1.5 rounded-xl text-xs font-montserrat transition-all duration-200 ${
                     isActive
-                      ? "bg-stone-900 text-white shadow-none"
-                      : "bg-white hover:bg-stone-100 text-stone-800 border border-stone-300/80"
+                      ? "bg-blue-600 text-white font-semibold shadow-sm shadow-blue-500/20"
+                      : "glass-panel hover:bg-white text-slate-700 border border-slate-200/70"
                   }`}
                   title={preset.description}
                 >
@@ -144,15 +144,15 @@ export function PreferenceBuilder({
         {/* Step A & B: Brand and Budget Selectors */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Brand Selection */}
-          <div className="rounded-xs border border-stone-300/80 bg-[#FAF9F5] p-4 space-y-2">
+          <div className="glass-panel rounded-2xl border border-blue-200/50 bg-blue-50/20 p-5 space-y-2">
             <div className="flex items-center justify-between">
               <label
                 htmlFor="select-brand"
-                className="text-xs font-semibold text-stone-900 tracking-tight"
+                className="text-xs font-sora font-bold text-slate-900"
               >
                 1. Preferred Brand (B)
               </label>
-              <span className="font-mono text-xs font-medium text-stone-800 bg-white px-2 py-0.5 rounded-xs border border-stone-300/80">
+              <span className="font-montserrat text-xs font-semibold text-blue-700 bg-white/80 px-2.5 py-0.5 rounded-full border border-blue-200/80">
                 {brand}
               </span>
             </div>
@@ -160,7 +160,7 @@ export function PreferenceBuilder({
               id="select-brand"
               value={brand}
               onChange={(e) => setBrand(e.target.value as SmartphoneBrand)}
-              className="h-9 w-full rounded-xs border border-stone-300 bg-white px-3 text-xs font-medium text-stone-900 focus:border-stone-500 focus:outline-none focus:ring-1 focus:ring-stone-500"
+              className="h-10 w-full rounded-xl border border-slate-200 bg-white/90 px-3 text-xs font-montserrat font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500/40"
             >
               {SMARTPHONE_BRANDS.map((b) => (
                 <option key={b} value={b}>
@@ -168,21 +168,21 @@ export function PreferenceBuilder({
                 </option>
               ))}
             </select>
-            <p className="text-[11px] text-stone-500 font-sans">
-              Matches respondents where preferred_brand = &quot;{brand}&quot;
+            <p className="text-[11px] text-slate-500 font-sans">
+              Filters cohort where brand = &quot;{brand}&quot;
             </p>
           </div>
 
           {/* Budget Selection */}
-          <div className="rounded-xs border border-stone-300/80 bg-[#FAF9F5] p-4 space-y-2">
+          <div className="glass-panel rounded-2xl border border-emerald-200/50 bg-emerald-50/20 p-5 space-y-2">
             <div className="flex items-center justify-between">
               <label
                 htmlFor="select-budget"
-                className="text-xs font-semibold text-stone-900 tracking-tight"
+                className="text-xs font-sora font-bold text-slate-900"
               >
                 2. Budget Range (P)
               </label>
-              <span className="font-mono text-xs font-medium text-stone-800 bg-white px-2 py-0.5 rounded-xs border border-stone-300/80">
+              <span className="font-montserrat text-xs font-semibold text-emerald-700 bg-white/80 px-2.5 py-0.5 rounded-full border border-emerald-200/80">
                 {budget}
               </span>
             </div>
@@ -190,7 +190,7 @@ export function PreferenceBuilder({
               id="select-budget"
               value={budget}
               onChange={(e) => setBudget(e.target.value as BudgetRange)}
-              className="h-9 w-full rounded-xs border border-stone-300 bg-white px-3 text-xs font-medium text-stone-900 focus:border-stone-500 focus:outline-none focus:ring-1 focus:ring-stone-500"
+              className="h-10 w-full rounded-xl border border-slate-200 bg-white/90 px-3 text-xs font-montserrat font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
             >
               {BUDGET_RANGES.map((r) => (
                 <option key={r} value={r}>
@@ -198,38 +198,35 @@ export function PreferenceBuilder({
                 </option>
               ))}
             </select>
-            <p className="text-[11px] text-stone-500 font-sans">
-              Matches respondents where budget_range = &quot;{budget}&quot;
+            <p className="text-[11px] text-slate-500 font-sans">
+              Filters cohort where budget = &quot;{budget}&quot;
             </p>
           </div>
         </div>
 
         {/* Step C: Feature Preferences */}
-        <div className="rounded-xs border border-stone-300/80 bg-white p-4 space-y-3">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-200/80 pb-2">
+        <div className="glass-panel rounded-2xl border border-white/80 p-5 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200/50 pb-3">
             <div>
-              <span className="text-xs font-semibold text-stone-900 block">
+              <span className="text-sm font-sora font-bold text-slate-900 block">
                 3. Priority Feature Triplet (F)
               </span>
-              <p className="text-xs text-stone-500 font-sans">
-                Select exactly three distinct canonical features. Selection is unranked (order does not matter).
+              <p className="text-xs text-slate-500 font-sans">
+                Select strictly three canonical features. Order does not matter: C(7,3) combinatorial space.
               </p>
             </div>
             <div className="flex items-center gap-2">
-              <span
-                className={`font-mono text-xs font-medium px-2 py-0.5 rounded-xs ${
-                  isFeatureCountValid
-                    ? "bg-lime-50 text-lime-900 border border-lime-300"
-                    : "bg-amber-50 text-amber-900 border border-amber-300"
-                }`}
+              <Badge
+                variant={isFeatureCountValid ? "lime" : "warning"}
+                size="md"
               >
                 {features.length} / 3 Selected
-              </span>
+              </Badge>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={resetPreferences}
-                className="text-xs h-7 px-2"
+                className="text-xs"
               >
                 Reset
               </Button>
@@ -237,7 +234,7 @@ export function PreferenceBuilder({
           </div>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 pt-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-1">
             {SMARTPHONE_FEATURES.map((feature) => {
               const isSelected = features.includes(feature);
               const isDisabled = !isSelected && features.length >= 3;
@@ -246,22 +243,22 @@ export function PreferenceBuilder({
                   key={feature}
                   onClick={() => toggleFeature(feature)}
                   disabled={isDisabled}
-                  className={`p-2.5 rounded-xs border text-left text-xs font-medium transition-colors flex items-center justify-between ${
+                  className={`p-3 rounded-xl border text-left text-xs font-montserrat transition-all duration-200 flex items-center justify-between ${
                     isSelected
-                      ? "border-cobalt-600 bg-cobalt-50 text-cobalt-950 font-semibold"
+                      ? "border-blue-500 bg-blue-50 text-blue-900 font-semibold shadow-xs"
                       : isDisabled
-                      ? "border-stone-200 bg-stone-50 text-stone-400 cursor-not-allowed opacity-60"
-                      : "border-stone-300/80 bg-white hover:bg-stone-50 text-stone-800"
+                      ? "border-slate-200/60 bg-slate-50/50 text-slate-400 cursor-not-allowed opacity-50"
+                      : "border-slate-200/80 glass-panel hover:bg-white text-slate-700"
                   }`}
                 >
                   <span>{feature}</span>
                   <span
-                    className={`font-mono text-xs ${
+                    className={`font-montserrat text-xs ${
                       isSelected
-                        ? "text-cobalt-700 font-bold"
+                        ? "text-blue-600 font-bold"
                         : isDisabled
-                        ? "text-stone-300"
-                        : "text-stone-400"
+                        ? "text-slate-300"
+                        : "text-slate-400"
                     }`}
                   >
                     {isSelected ? "✓" : "+"}
@@ -273,11 +270,13 @@ export function PreferenceBuilder({
 
           {/* Feature selection notice */}
           {features.length === 3 ? (
-            <p className="text-[11px] text-lime-800 font-medium font-sans">
-              ✓ Exactly 3 features selected. Deselect any active feature to swap it with another.
+            <p className="text-xs text-emerald-700 font-medium font-sans flex items-center gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-emerald-500" />
+              Exactly 3 features selected. Profile is ready for matching engine evaluation.
             </p>
           ) : (
-            <p className="text-[11px] text-amber-800 font-medium font-sans">
+            <p className="text-xs text-amber-700 font-medium font-sans flex items-center gap-1.5">
+              <span className="h-2 w-2 rounded-full bg-amber-500" />
               Please select {3 - features.length} more feature{3 - features.length > 1 ? "s" : ""} to complete your profile vector.
             </p>
           )}

@@ -96,45 +96,45 @@ export default function MethodologyPage() {
             subtitle="Six discrete attributes recorded per participant"
           />
           <CardContent>
-            <div className="overflow-x-auto rounded-xs border border-stone-300/80 bg-white">
+            <div className="overflow-x-auto glass-panel rounded-2xl border border-white/80 shadow-sm">
               <table className="w-full text-left text-xs border-collapse font-sans">
                 <thead>
-                  <tr className="bg-[#FAF9F5] border-b border-stone-300/80 text-stone-600 font-mono uppercase text-[10px] tracking-wider font-semibold">
-                    <th className="py-2.5 px-3">Field</th>
-                    <th className="py-2.5 px-3">Type</th>
-                    <th className="py-2.5 px-3">Allowed Domain / Rule</th>
+                  <tr className="bg-white/50 border-b border-slate-200/60 text-slate-500 font-montserrat uppercase text-[11px] tracking-wider font-semibold">
+                    <th className="py-3 px-4">Field</th>
+                    <th className="py-3 px-4">Type</th>
+                    <th className="py-3 px-4">Allowed Domain / Rule</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-stone-200/60 text-stone-700">
+                <tbody className="divide-y divide-slate-100/80 text-slate-700">
                   <tr>
-                    <td className="py-2.5 px-3 font-mono font-semibold text-stone-900">response_id</td>
-                    <td className="py-2.5 px-3 font-mono text-[11px]">string</td>
-                    <td className="py-2.5 px-3">Unique alphanumeric identifier (e.g. <code>RESP_001</code>). Duplicate IDs strictly rejected.</td>
+                    <td className="py-3 px-4 font-montserrat font-semibold text-slate-900">response_id</td>
+                    <td className="py-3 px-4 font-montserrat text-xs text-blue-600">string</td>
+                    <td className="py-3 px-4">Unique alphanumeric identifier (e.g. <code className="bg-slate-100 px-1.5 py-0.5 rounded font-montserrat text-[11px]">RESP_001</code>). Duplicate IDs strictly rejected.</td>
                   </tr>
                   <tr>
-                    <td className="py-2.5 px-3 font-mono font-semibold text-stone-900">preferred_brand</td>
-                    <td className="py-2.5 px-3 font-mono text-[11px]">enum</td>
-                    <td className="py-2.5 px-3">{SMARTPHONE_BRANDS.join(", ")}</td>
+                    <td className="py-3 px-4 font-montserrat font-semibold text-slate-900">preferred_brand</td>
+                    <td className="py-3 px-4 font-montserrat text-xs text-blue-600">enum</td>
+                    <td className="py-3 px-4">{SMARTPHONE_BRANDS.join(", ")}</td>
                   </tr>
                   <tr>
-                    <td className="py-2.5 px-3 font-mono font-semibold text-stone-900">budget_range</td>
-                    <td className="py-2.5 px-3 font-mono text-[11px]">enum</td>
-                    <td className="py-2.5 px-3">{BUDGET_RANGES.join(", ")}</td>
+                    <td className="py-3 px-4 font-montserrat font-semibold text-slate-900">budget_range</td>
+                    <td className="py-3 px-4 font-montserrat text-xs text-blue-600">enum</td>
+                    <td className="py-3 px-4">{BUDGET_RANGES.join(", ")}</td>
                   </tr>
                   <tr>
-                    <td className="py-2.5 px-3 font-mono font-semibold text-stone-900">preferred_features</td>
-                    <td className="py-2.5 px-3 font-mono text-[11px]">[string, string, string]</td>
-                    <td className="py-2.5 px-3">Exactly 3 distinct items from the 7 approved features.</td>
+                    <td className="py-3 px-4 font-montserrat font-semibold text-slate-900">preferred_features</td>
+                    <td className="py-3 px-4 font-montserrat text-xs text-blue-600">[string, string, string]</td>
+                    <td className="py-3 px-4">Exactly 3 distinct items from the 7 approved features.</td>
                   </tr>
                   <tr>
-                    <td className="py-2.5 px-3 font-mono font-semibold text-stone-900">primary_use</td>
-                    <td className="py-2.5 px-3 font-mono text-[11px]">enum</td>
-                    <td className="py-2.5 px-3">{PRIMARY_USES.join(", ")}</td>
+                    <td className="py-3 px-4 font-montserrat font-semibold text-slate-900">primary_use</td>
+                    <td className="py-3 px-4 font-montserrat text-xs text-blue-600">enum</td>
+                    <td className="py-3 px-4">{PRIMARY_USES.join(", ")}</td>
                   </tr>
                   <tr>
-                    <td className="py-2.5 px-3 font-mono font-semibold text-stone-900">os_preference</td>
-                    <td className="py-2.5 px-3 font-mono text-[11px]">enum</td>
-                    <td className="py-2.5 px-3">{OS_PREFERENCES.join(", ")}</td>
+                    <td className="py-3 px-4 font-montserrat font-semibold text-slate-900">os_preference</td>
+                    <td className="py-3 px-4 font-montserrat text-xs text-blue-600">enum</td>
+                    <td className="py-3 px-4">{OS_PREFERENCES.join(", ")}</td>
                   </tr>
                 </tbody>
               </table>

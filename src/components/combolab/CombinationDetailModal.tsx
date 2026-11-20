@@ -25,9 +25,9 @@ export function CombinationDetailModal({
   );
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-4 backdrop-blur-xs">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/30 p-4 backdrop-blur-md">
       <div
-        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-xs border border-stone-200 bg-[#FAF9F5] p-6 shadow-xl text-stone-900 space-y-5"
+        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl border border-white/90 glass-card p-6 sm:p-7 shadow-2xl text-slate-800 space-y-5"
         role="dialog"
         aria-modal="true"
       >

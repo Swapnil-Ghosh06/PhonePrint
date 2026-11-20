@@ -84,50 +84,44 @@ export function SetOperationsToolbar({
   const operations = mode === "2-set" ? OPERATIONS_2SET : OPERATIONS_3SET;
 
   return (
-    <div className="rounded-xs border border-stone-300/80 bg-white p-5 shadow-none text-stone-900 space-y-4">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-200/80 pb-3">
+    <div className="glass-panel rounded-2xl border border-white/80 p-5 shadow-sm space-y-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200/50 pb-3">
         <div>
-          <div className="flex items-center gap-2">
-            <h3 className="text-sm font-semibold tracking-tight text-stone-900 font-sans">
-              Set Theoretic Operations
-            </h3>
-            <Badge variant="lime">Live Calculation</Badge>
-          </div>
-          <p className="text-xs text-stone-500 mt-0.5 font-sans">
-            Select an algebraic expression to compute the resulting respondent subset and inspect its Venn partition
-          </p>
+          <span className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold block">
+            Algebraic Operations
+          </span>
+          <span className="text-xs text-slate-500 font-sans">
+            Click any set operation to highlight its Venn region and filter matching respondents
+          </span>
         </div>
 
+        {/* Live Cardinality Pill */}
         <div className="flex items-center gap-2">
-          <span className="text-xs text-stone-500 font-sans">Result Cardinality:</span>
-          <span className="font-mono text-xs font-semibold text-stone-900 bg-stone-100 border border-stone-200 px-2 py-0.5 rounded">
-            |Result| = {resultCardinality}
-          </span>
-          <span className="text-xs text-stone-400 font-mono">
-            ({Math.round((resultCardinality / totalUniverse) * 100)}%)
-          </span>
+          <span className="text-xs font-montserrat text-slate-500">Result Size:</span>
+          <Badge variant="cobalt" size="md">
+            |Result| = {resultCardinality} ({((resultCardinality / totalUniverse) * 100).toFixed(1)}%)
+          </Badge>
         </div>
       </div>
 
-      {/* Button Grid */}
-      <div className="flex flex-wrap items-center gap-1.5">
+      {/* Buttons Grid */}
+      <div className="flex flex-wrap gap-2">
         {operations.map((op) => {
           const isActive = activeOperation === op.id;
           return (
             <button
               key={op.id}
-              type="button"
               onClick={() => onSelectOperation(op.id)}
-              className={`flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 ${
+              className={`px-3 py-1.5 rounded-xl text-xs font-montserrat transition-all duration-200 flex items-center gap-1.5 ${
                 isActive
-                  ? "bg-stone-900 text-white shadow-none"
-                  : "bg-stone-100 text-stone-700 hover:bg-stone-200 hover:text-stone-900 border border-stone-200"
+                  ? "bg-blue-600 text-white font-semibold shadow-sm shadow-blue-500/20"
+                  : "glass-panel hover:bg-white text-slate-700 border border-slate-200/70"
               }`}
             >
-              <span className={`font-mono text-xs font-semibold ${isActive ? "text-stone-100" : "text-stone-900"}`}>
+              <span className={isActive ? "text-blue-100 font-bold" : "text-blue-600 font-semibold"}>
                 {op.symbol}
               </span>
-              <span className="text-[10px] text-stone-400 hidden sm:inline font-sans">{op.label}</span>
+              <span>{op.label}</span>
             </button>
           );
         })}

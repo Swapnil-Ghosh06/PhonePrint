@@ -23,29 +23,35 @@ export function MetricCard({
   icon,
   className = "",
 }: MetricCardProps) {
-  const topAccentStyles = {
-    cobalt: "border-t-2 border-t-cobalt-600",
-    lime: "border-t-2 border-t-lime-600",
-    graphite: "border-t-2 border-t-stone-900",
+  const accentGlow = {
+    cobalt: "from-blue-500/10 to-indigo-500/5 border-blue-200/50",
+    lime: "from-emerald-500/10 to-teal-500/5 border-emerald-200/50",
+    graphite: "from-slate-500/10 to-stone-500/5 border-slate-200/50",
+  };
+
+  const accentPillBg = {
+    cobalt: "bg-blue-50 text-blue-600 border-blue-200/60",
+    lime: "bg-emerald-50 text-emerald-600 border-emerald-200/60",
+    graphite: "bg-slate-100 text-slate-700 border-slate-200/60",
   };
 
   return (
     <div
-      className={`relative rounded-xs border border-stone-300/80 bg-white p-5 shadow-none transition-colors ${topAccentStyles[accentColor]} ${className}`}
+      className={`glass-panel glass-panel-hover relative overflow-hidden rounded-2xl border p-6 bg-gradient-to-br ${accentGlow[accentColor]} ${className}`}
     >
-      <div className="flex items-center justify-between gap-2">
-        <span className="font-mono text-[10px] uppercase tracking-wider text-stone-500 font-medium">
-          [ {label} ]
+      <div className="flex items-center justify-between gap-3">
+        <span className="font-montserrat text-xs uppercase tracking-wider font-semibold text-slate-500">
+          {label}
         </span>
         {icon && (
-          <span className="text-stone-400">
+          <div className={`p-2 rounded-xl border ${accentPillBg[accentColor]} shadow-xs`}>
             {icon}
-          </span>
+          </div>
         )}
       </div>
 
-      <div className="mt-3 flex items-baseline justify-between gap-2">
-        <div className="font-serif text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+      <div className="mt-3 flex items-baseline justify-between gap-3">
+        <div className="font-sora text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
           {value}
         </div>
         {badge && (
@@ -56,7 +62,7 @@ export function MetricCard({
       </div>
 
       {subtext && (
-        <p className="mt-3 border-t border-stone-200/80 pt-2 text-xs text-stone-600 font-sans leading-relaxed">
+        <p className="mt-3.5 border-t border-slate-200/40 pt-3 text-xs text-slate-600 font-sans leading-relaxed">
           {subtext}
         </p>
       )}

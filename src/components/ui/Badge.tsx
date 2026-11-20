@@ -25,37 +25,37 @@ export function Badge({
   className = "",
 }: BadgeProps) {
   const variantStyles: Record<BadgeVariant, string> = {
-    default: "bg-stone-100/90 text-stone-800 border-stone-300/80",
-    cobalt: "bg-blue-50 text-blue-900 border-blue-200/90",
-    lime: "bg-lime-50 text-lime-950 border-lime-300",
-    success: "bg-emerald-50 text-emerald-950 border-emerald-300",
-    warning: "bg-amber-50 text-amber-950 border-amber-300",
-    info: "bg-blue-50 text-blue-900 border-blue-200/90",
-    outline: "bg-transparent text-stone-700 border-stone-300",
+    default: "bg-slate-100/90 text-slate-700 border-slate-200/80 shadow-xs",
+    cobalt: "bg-blue-50/90 text-blue-700 border-blue-200/80 shadow-xs",
+    lime: "bg-emerald-50/90 text-emerald-800 border-emerald-200/80 shadow-xs",
+    success: "bg-emerald-50/90 text-emerald-800 border-emerald-200/80 shadow-xs",
+    warning: "bg-amber-50/90 text-amber-800 border-amber-200/80 shadow-xs",
+    info: "bg-sky-50/90 text-sky-700 border-sky-200/80 shadow-xs",
+    outline: "bg-white/60 backdrop-blur-md text-slate-700 border-slate-300/80",
   };
 
   const dotColors: Record<BadgeVariant, string> = {
-    default: "bg-stone-500",
-    cobalt: "bg-blue-600",
-    lime: "bg-lime-600",
-    success: "bg-emerald-600",
-    warning: "bg-amber-600",
-    info: "bg-blue-600",
-    outline: "bg-stone-500",
+    default: "bg-slate-400",
+    cobalt: "bg-blue-500",
+    lime: "bg-emerald-500",
+    success: "bg-emerald-500",
+    warning: "bg-amber-500",
+    info: "bg-sky-500",
+    outline: "bg-slate-400",
   };
 
   const sizeStyles = {
-    sm: "px-2 py-0.5 text-[10px] tracking-wide",
-    md: "px-2.5 py-0.5 text-[11px] tracking-wide",
+    sm: "px-2.5 py-0.5 text-[11px] font-montserrat font-medium tracking-wide",
+    md: "px-3 py-1 text-xs font-montserrat font-semibold tracking-wide",
   };
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-xs border font-mono font-medium uppercase leading-none shadow-none ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-full border transition-all ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
     >
       {dot && (
         <span
-          className={`h-1.5 w-1.5 rounded-full ${dotColors[variant]}`}
+          className={`h-1.5 w-1.5 rounded-full ${dotColors[variant]} shrink-0`}
           aria-hidden="true"
         />
       )}

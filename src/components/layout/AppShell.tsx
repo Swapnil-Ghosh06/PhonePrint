@@ -8,9 +8,9 @@ export interface AppShellProps {
 
 export function AppShell({ children }: AppShellProps) {
   return (
-    <div className="flex min-h-screen flex-col bg-[#FBFBF9] text-stone-900 antialiased font-sans selection:bg-cobalt-100 selection:text-cobalt-900">
+    <div className="flex min-h-screen flex-col font-sans selection:bg-blue-100 selection:text-blue-900">
       <Navbar />
-      <div className="flex-1">{children}</div>
+      <main className="flex-1 transition-all">{children}</main>
       <Footer />
     </div>
   );

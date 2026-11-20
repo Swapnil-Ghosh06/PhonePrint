@@ -82,17 +82,15 @@ export default function MyPhonePrintPage() {
         description="Select your target brand, budget tier, and exactly three canonical features to construct your personal PhonePrint vector. Computes exact set intersections and mutually exclusive partial matches against the student cohort."
         badge={{ text: datasetInfo.badgeText, variant: datasetInfo.isDemo ? "lime" : "cobalt" }}
         actions={
-          <div className="flex items-center gap-2">
-            <span className={`font-mono text-xs font-medium px-2.5 py-1 rounded border ${
-              datasetInfo.isDemo
-                ? "text-stone-700 bg-stone-100 border-stone-200"
-                : "text-cobalt-800 bg-blue-50 border-blue-200"
-            }`}>
-              {datasetInfo.tagText}
-            </span>
+          <div className="flex items-center gap-2.5">
             <Link href="/combolab">
               <Button variant="outline" size="sm">
                 &larr; ComboLab
+              </Button>
+            </Link>
+            <Link href="/setlab">
+              <Button variant="primary" size="sm">
+                SetLab &rarr;
               </Button>
             </Link>
           </div>
@@ -102,11 +100,11 @@ export default function MyPhonePrintPage() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Section 1: Preference Builder */}
         <section id="builder" className="space-y-3">
-          <div className="flex items-center justify-between pb-1 border-b border-stone-200">
-            <h2 className="text-xs font-mono font-semibold uppercase tracking-wider text-stone-500">
+          <div className="flex items-center justify-between pb-2 border-b border-slate-200/50">
+            <h2 className="text-xs font-montserrat font-bold uppercase tracking-wider text-slate-500">
               1. Preference Vector Formulation
             </h2>
-            <span className="text-xs text-stone-400 font-mono">
+            <span className="text-xs text-slate-400 font-montserrat font-medium">
               3 Dimensions: Brand • Budget • 3 Features
             </span>
           </div>
@@ -127,11 +125,11 @@ export default function MyPhonePrintPage() {
           <>
             {/* Exact Matches */}
             <section id="exact-matches" className="space-y-3">
-              <div className="flex items-center justify-between pb-1 border-b border-stone-200">
-                <h2 className="text-xs font-mono font-semibold uppercase tracking-wider text-stone-500">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-200/50">
+                <h2 className="text-xs font-montserrat font-bold uppercase tracking-wider text-slate-500">
                   2. Exact Profile Matching
                 </h2>
-                <span className="text-xs text-stone-400 font-mono">
+                <span className="text-xs text-slate-400 font-montserrat font-medium">
                   Intersection: B ∩ P ∩ F
                 </span>
               </div>
@@ -140,83 +138,65 @@ export default function MyPhonePrintPage() {
 
             {/* Mutually Exclusive Partial Match Breakdown */}
             <section id="partial-matches" className="space-y-3">
-              <div className="flex items-center justify-between pb-1 border-b border-stone-200">
-                <h2 className="text-xs font-mono font-semibold uppercase tracking-wider text-stone-500">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-200/50">
+                <h2 className="text-xs font-montserrat font-bold uppercase tracking-wider text-slate-500">
                   3. Mutually Exclusive Match Classification
                 </h2>
-                <span className="text-xs text-stone-400 font-mono">
+                <span className="text-xs text-slate-400 font-montserrat font-medium">
                   Conservation: N₃ + N₂ + N₁ + N₀ = N
                 </span>
               </div>
               <PartialMatchBreakdown result={matchResult} />
             </section>
 
-            {/* Independent Feature Overlap */}
-            <section id="feature-overlap" className="space-y-3">
-              <div className="flex items-center justify-between pb-1 border-b border-stone-200">
-                <h2 className="text-xs font-mono font-semibold uppercase tracking-wider text-stone-500">
-                  4. Feature Triplet Overlap Analysis
+            {/* Feature Overlap Breakdown (Jaccard & Cardinalities) */}
+            <section id="feature-overlaps" className="space-y-3">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-200/50">
+                <h2 className="text-xs font-montserrat font-bold uppercase tracking-wider text-slate-500">
+                  4. Feature Set Overlap &amp; Similarity
                 </h2>
-                <span className="text-xs text-stone-400 font-mono">
-                  Subset Size: |F* ∩ F_i| ∈ &#123;0, 1, 2, 3&#125;
+                <span className="text-xs text-slate-400 font-montserrat font-medium">
+                  Metric: Jaccard J(A, B) = |A ∩ B| / |A ∪ B|
                 </span>
               </div>
               <FeatureOverlapCard
                 featureOverlap={matchResult.featureOverlap}
                 selectedFeatures={matchResult.profile.features}
-                totalCohort={matchResult.totalCohort}
+                totalCohort={responses.length}
               />
             </section>
 
-            {/* Respondent Explorer Table */}
-            <section id="explorer" className="space-y-3">
-              <div className="flex items-center justify-between pb-1 border-b border-stone-200">
-                <h2 className="text-xs font-mono font-semibold uppercase tracking-wider text-stone-500">
-                  5. Anonymous Respondent Explorer
+            {/* Mathematical Theory Panel */}
+            <section id="mathematical-theory" className="space-y-3">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-200/50">
+                <h2 className="text-xs font-montserrat font-bold uppercase tracking-wider text-slate-500">
+                  5. Discrete Mathematics Foundations
                 </h2>
-                <span className="text-xs text-stone-400 font-mono">
-                  Individual Record Evaluation
-                </span>
-              </div>
-              <RespondentExplorerTable respondents={matchResult.respondents} />
-            </section>
-
-            {/* Discrete Mathematics Learning Foundation */}
-            <section id="theory" className="space-y-3">
-              <div className="flex items-center justify-between pb-1 border-b border-stone-200">
-                <h2 className="text-xs font-mono font-semibold uppercase tracking-wider text-stone-500">
-                  6. Discrete Mathematics Matching Foundation
-                </h2>
-                <span className="text-xs text-stone-400 font-mono">
-                  Formal Set Theory &amp; Partitions
+                <span className="text-xs text-slate-400 font-montserrat font-medium">
+                  Partition Theory &amp; Intersection Semantics
                 </span>
               </div>
               <MatchingTheoryPanel />
             </section>
+
+            {/* Respondent Explorer Table */}
+            <section id="respondents" className="space-y-3">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-200/50">
+                <h2 className="text-xs font-montserrat font-bold uppercase tracking-wider text-slate-500">
+                  6. Cohort Respondent Inspector
+                </h2>
+                <span className="text-xs text-slate-400 font-montserrat font-medium">
+                  Inspect All {responses.length} Anonymized Records
+                </span>
+              </div>
+              <RespondentExplorerTable respondents={matchResult.respondents} />
+            </section>
           </>
         ) : (
-          <Callout
-            variant="warning"
-            title="Incomplete Preference Vector"
-          >
-            Please select exactly three distinct features in the builder above to
-            compute your PhonePrint vector and evaluate set intersections across
-            the student cohort.
+          <Callout variant="warning" title="Incomplete Preference Vector">
+            Please select <strong>exactly 3 features</strong> in the builder above to trigger the discrete matching engine and view your cohort alignment metrics.
           </Callout>
         )}
-
-        {/* Academic Synthesis Summary */}
-        <Callout
-          variant="highlight"
-          title="PhonePrint Preference Analytics Summary"
-        >
-          My PhonePrint models user smartphone affinity as a discrete set
-          intersection problem over $U$. By evaluating Brand ($B$), Budget ($P$),
-          and Feature Triplet ($F$), the system demonstrates how multi-dimensional
-          conjunctions partition a population into non-overlapping distance bands,
-          providing mathematically rigorous insights without aggregate scalar
-          approximations.
-        </Callout>
       </div>
     </div>
   );

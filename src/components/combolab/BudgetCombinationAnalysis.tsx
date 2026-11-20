@@ -3,8 +3,6 @@
 import React, { useState, useMemo } from "react";
 import { Card, CardHeader, CardContent } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
-import { Callout } from "@/components/ui/Callout";
-import { KaTeXMath } from "@/components/ui/KaTeXMath";
 import {
   BUDGET_RANGES,
   type BudgetRange,
@@ -45,10 +43,10 @@ export function BudgetCombinationAnalysis({
       <CardContent className="space-y-6">
         {/* Budget Tier Selector Tabs */}
         <div>
-          <label className="text-xs font-mono uppercase tracking-wider text-stone-500 block mb-2">
+          <label className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold block mb-2.5">
             Select Budget Segment
           </label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             {BUDGET_RANGES.map((range) => {
               const count = analytics.budgetCohortSizes[range];
               const isActive = activeBudget === range;
@@ -56,23 +54,23 @@ export function BudgetCombinationAnalysis({
                 <button
                   key={range}
                   onClick={() => setActiveBudget(range)}
-                  className={`p-3 rounded-xs border text-left transition-all ${
+                  className={`p-3.5 rounded-2xl border text-left transition-all duration-200 ${
                     isActive
-                      ? "border-cobalt-600 bg-cobalt-50/50 shadow-none"
-                      : "border-stone-200 bg-white hover:bg-[#FAF9F5] text-stone-700"
+                      ? "border-blue-500 bg-blue-50/70 shadow-sm"
+                      : "border-slate-200/80 glass-panel hover:bg-white text-slate-700"
                   }`}
                 >
-                  <span className="text-xs font-serif font-bold block text-stone-900">
+                  <span className="text-xs font-sora font-bold block text-slate-900">
                     {range}
                   </span>
-                  <div className="flex items-center justify-between mt-1 text-[11px]">
-                    <span className="text-stone-500">Cohort Size:</span>
+                  <div className="flex items-center justify-between mt-1 text-[11px] font-montserrat">
+                    <span className="text-slate-500">Cohort Size:</span>
                     <span
-                      className={`font-mono font-bold ${
-                        count > 0 ? "text-cobalt-700" : "text-stone-400"
+                      className={`font-bold ${
+                        count > 0 ? "text-blue-700" : "text-slate-400"
                       }`}
                     >
-                      {count} {count === 1 ? "resp." : "resps."}
+                      {count} {count === 1 ? "student" : "students"}
                     </span>
                   </div>
                 </button>
@@ -83,35 +81,35 @@ export function BudgetCombinationAnalysis({
 
         {/* Tier Overview Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="rounded-xs border border-stone-200 bg-white p-4">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-stone-500 block">
-              Segment Sample Size (N_tier)
+          <div className="glass-panel rounded-2xl border border-white/80 p-5">
+            <span className="text-xs font-montserrat uppercase tracking-wider text-slate-500 font-semibold block">
+              Segment Sample Size
             </span>
-            <div className="mt-1 font-serif text-3xl font-bold text-stone-900">
+            <div className="mt-1 font-sora text-3xl font-extrabold text-slate-900">
               {tierCohortSize}
             </div>
-            <p className="text-[11px] text-stone-500 mt-0.5">
+            <p className="text-xs text-slate-500 mt-1 font-sans">
               Strict denominator for within-budget percentages
             </p>
           </div>
 
-          <div className="rounded-xs border border-stone-200 bg-white p-4">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-cobalt-800 block">
-              Distinct Combinations Observed
+          <div className="glass-panel rounded-2xl border border-white/80 p-5">
+            <span className="text-xs font-montserrat uppercase tracking-wider text-blue-700 font-semibold block">
+              Distinct Bundles Observed
             </span>
-            <div className="mt-1 font-serif text-3xl font-bold text-cobalt-700">
+            <div className="mt-1 font-sora text-3xl font-extrabold text-blue-600">
               {tierCombinations.length}
             </div>
-            <p className="text-[11px] text-stone-500 mt-0.5">
+            <p className="text-xs text-slate-500 mt-1 font-sans">
               Unique feature triplets in this price bracket
             </p>
           </div>
 
-          <div className="rounded-xs border border-stone-200 bg-white p-4">
-            <span className="text-[11px] font-mono uppercase tracking-wider text-lime-800 block">
+          <div className="glass-panel rounded-2xl border border-white/80 p-5">
+            <span className="text-xs font-montserrat uppercase tracking-wider text-emerald-700 font-semibold block">
               Full Cohort Share
             </span>
-            <div className="mt-1 font-serif text-3xl font-bold text-stone-900">
+            <div className="mt-1 font-sora text-3xl font-extrabold text-emerald-600">
               {analytics.totalRespondents > 0
                 ? (
                     (tierCohortSize / analytics.totalRespondents) *
@@ -120,8 +118,8 @@ export function BudgetCombinationAnalysis({
                 : 0}
               %
             </div>
-            <p className="text-[11px] text-stone-500 mt-0.5">
-              {tierCohortSize} of {analytics.totalRespondents} total study participants
+            <p className="text-xs text-slate-500 mt-1 font-sans">
+              {tierCohortSize} of {analytics.totalRespondents} total survey participants
             </p>
           </div>
         </div>
@@ -129,83 +127,49 @@ export function BudgetCombinationAnalysis({
         {/* Combinations Breakdown in Selected Tier */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-stone-700">
-              Feature Combinations in {activeBudget}
+            <h4 className="text-sm font-sora font-bold text-slate-900">
+              Observed Feature Bundles in {activeBudget}
             </h4>
-            <span className="text-xs text-stone-500 font-mono">
-              Denominator = {tierCohortSize}
+            <span className="text-xs font-montserrat text-slate-500">
+              {tierCombinations.length} combinations active
             </span>
           </div>
 
-          {tierCohortSize === 0 ? (
-            <div className="p-8 text-center rounded-xs border border-dashed border-stone-200 bg-[#FAF9F5]">
-              <p className="text-sm text-stone-600 font-medium">
-                No respondents in the current survey dataset belong to the {activeBudget} tier.
-              </p>
-              <p className="text-xs text-stone-400 mt-1">
-                Within-tier percentage defaults to 0% with division-by-zero protection.
-              </p>
+          {tierCombinations.length === 0 ? (
+            <div className="p-8 text-center rounded-2xl glass-panel border border-dashed border-slate-300 text-slate-500 text-xs font-sans">
+              No respondents in this budget tier have selected an active feature combination.
             </div>
           ) : (
-            <div className="space-y-3">
+            <div className="space-y-2.5">
               {tierCombinations.map((combo) => {
-                const tierMetrics = combo.budgetBreakdown[activeBudget];
+                const breakdown = combo.budgetBreakdown[activeBudget];
                 return (
                   <div
-                    key={combo.id}
+                    key={combo.key || combo.id}
                     onClick={() => onSelectCombination?.(combo)}
-                    className="p-4 rounded-xs border border-stone-200 bg-white hover:border-cobalt-400 cursor-pointer transition-all shadow-none space-y-3"
+                    className="p-4 rounded-2xl glass-panel border border-white/80 hover:bg-white transition-all cursor-pointer flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-xs"
                   >
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-200/80 pb-2">
-                      <div className="flex items-center gap-2">
-                        <span className="font-mono text-xs font-bold text-stone-700">
-                          {combo.id}
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {combo.features.map((f) => (
+                        <span
+                          key={f}
+                          className="px-2.5 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-montserrat font-medium"
+                        >
+                          {f}
                         </span>
-                        <div className="flex flex-wrap gap-1">
-                          {combo.features.map((f) => (
-                            <span
-                              key={f}
-                              className="text-[11px] font-medium text-stone-800 bg-[#FAF9F5] px-2 py-0.5 rounded border border-stone-200"
-                            >
-                              {f}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        <Badge variant="lime" className="font-mono">
-                          {tierMetrics.percentageWithinBudget}% of Tier
-                        </Badge>
-                        <Badge variant="outline" className="font-mono text-stone-600">
-                          {combo.observedPercentage}% Overall
-                        </Badge>
-                      </div>
+                      ))}
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-stone-600">
-                      <div>
-                        <span className="font-medium text-stone-700">
-                          Within-Tier Calculation:
-                        </span>{" "}
-                        <span className="font-mono text-cobalt-700 font-bold">
-                          {tierMetrics.count} / {tierCohortSize} respondents ={" "}
-                          {tierMetrics.percentageWithinBudget}%
+                    <div className="flex items-center gap-4 shrink-0 font-montserrat">
+                      <div className="text-right">
+                        <span className="text-xs font-bold text-slate-900 block">
+                          {breakdown.count} {breakdown.count === 1 ? "student" : "students"}
+                        </span>
+                        <span className="text-[10px] text-slate-500">
+                          {breakdown.percentageWithinBudget.toFixed(1)}% of tier
                         </span>
                       </div>
-                      <div>
-                        <span className="font-medium text-stone-700">
-                          Full-Cohort Calculation:
-                        </span>{" "}
-                        <span className="font-mono text-stone-600">
-                          {tierMetrics.count} / {analytics.totalRespondents} respondents ={" "}
-                          {(
-                            (tierMetrics.count / analytics.totalRespondents) *
-                            100
-                          ).toFixed(2)}
-                          %
-                        </span>
-                      </div>
+                      <span className="text-slate-400">&rarr;</span>
                     </div>
                   </div>
                 );
@@ -213,22 +177,6 @@ export function BudgetCombinationAnalysis({
             </div>
           )}
         </div>
-
-        {/* Methodological Alert on Subgroup Denominators */}
-        <Callout variant="warning" title="Methodological Safeguard: Denominator Integrity">
-          When analyzing sub-populations (such as budget tiers), reporting
-          percentages requires using the specific stratum size (
-          <KaTeXMath math="N_{\text{tier}}" />
-          ) as the denominator. For instance, in the &quot;{activeBudget}&quot;
-          segment, frequencies are divided by <KaTeXMath math={`N = ${tierCohortSize}`} />
-          . With small subgroup samples, individual preferences produce larger percentage
-          swings (e.g., 1 respondent ={" "}
-          {tierCohortSize > 0
-            ? ((1 / tierCohortSize) * 100).toFixed(1)
-            : "0.0"}
-          %). Subgroup percentages must never be confused with overall cohort
-          proportions.
-        </Callout>
       </CardContent>
     </Card>
   );

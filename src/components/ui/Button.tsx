@@ -22,26 +22,26 @@ export function Button({
 }: ButtonProps) {
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      "bg-stone-900 text-white hover:bg-stone-800 active:bg-black border border-stone-900 shadow-none disabled:bg-stone-300 disabled:border-stone-300",
+      "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 active:scale-[0.98] shadow-md shadow-blue-500/20 border border-blue-500/40",
     secondary:
-      "bg-white text-stone-900 hover:bg-stone-100/80 active:bg-stone-200 border border-stone-300 shadow-none",
+      "glass-panel text-slate-800 hover:bg-white active:scale-[0.98] shadow-sm hover:shadow",
     lime:
-      "bg-lime-700 text-white hover:bg-lime-800 active:bg-lime-900 border border-lime-700 shadow-none disabled:opacity-50",
+      "bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-700 hover:to-teal-700 active:scale-[0.98] shadow-md shadow-emerald-500/20 border border-emerald-500/40",
     outline:
-      "bg-transparent text-stone-800 border border-stone-300/90 hover:bg-white hover:border-stone-900 active:bg-stone-100",
+      "bg-white/60 backdrop-blur-md text-slate-700 border border-slate-300/80 hover:bg-white hover:border-slate-400 hover:text-slate-900 active:scale-[0.98]",
     ghost:
-      "bg-transparent text-stone-700 hover:bg-stone-200/60 hover:text-stone-950 active:bg-stone-200",
+      "bg-transparent text-slate-600 hover:bg-slate-100/70 hover:text-slate-900 active:bg-slate-200/60",
   };
 
   const sizeStyles: Record<ButtonSize, string> = {
-    sm: "px-2.5 py-1 text-xs gap-1.5",
-    md: "px-3.5 py-1.5 text-sm gap-2",
-    lg: "px-4.5 py-2 text-base gap-2.5",
+    sm: "px-3 py-1.5 text-xs gap-1.5 rounded-xl font-montserrat font-medium",
+    md: "px-4 py-2 text-xs sm:text-sm gap-2 rounded-xl font-montserrat font-semibold",
+    lg: "px-5 py-2.5 text-sm sm:text-base gap-2.5 rounded-2xl font-montserrat font-semibold",
   };
 
   return (
     <button
-      className={`inline-flex items-center justify-center font-medium rounded-xs transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 disabled:pointer-events-none disabled:opacity-50 ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
+      className={`inline-flex items-center justify-center transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 disabled:pointer-events-none disabled:opacity-50 ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
       disabled={disabled}
       {...props}
     >
