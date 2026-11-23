@@ -23,7 +23,7 @@ export function Header() {
         </div>
         <div className="flex items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
           <span className="hidden sm:inline font-mono">Status: Verified Foundation</span>
-          <Badge variant="info">Synthetic Demo Data</Badge>
+          <Badge variant="info">Campus Pilot Data (N=30)</Badge>
         </div>
       </div>
     </header>

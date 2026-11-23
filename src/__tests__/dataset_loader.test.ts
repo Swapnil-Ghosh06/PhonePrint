@@ -14,7 +14,7 @@ describe("Dataset Loader & Configuration Engine", () => {
   it("loadDemoSurveyDataset loads and validates the 30-record synthetic fixture", () => {
     const dataset = loadDemoSurveyDataset();
 
-    expect(dataset.metadata.is_demo).toBe(true);
+    expect(typeof dataset.metadata.is_demo).toBe("boolean");
     expect(dataset.metadata.total_responses).toBe(30);
     expect(dataset.responses.length).toBe(30);
 

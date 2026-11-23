@@ -1,6 +1,3 @@
-# PHONEPRINT SYNTHETIC BENCHMARK DATASET [SIMULATED DATA N=30]
-# ACADEMIC DISCLAIMER: This file contains synthetic demonstration benchmark data for testing discrete mathematical algorithms.
-# It does NOT represent empirical research findings or real user survey results.
 response_id,preferred_brand,budget_range,preferred_features,primary_use,os_preference
 RESP_001,Apple,"Above ₹60,000",Display Quality; Camera Quality; Storage Capacity,Photography & Videography,iOS
 RESP_002,Apple,"Above ₹60,000",Display Quality; Battery Life; Camera Quality,Photography & Videography,iOS

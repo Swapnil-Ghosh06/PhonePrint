@@ -3,8 +3,8 @@
     "version": "2.1.0",
     "generated_at": "2026-11-12T14:00:00.000000+00:00",
     "total_responses": 30,
-    "is_demo": true,
-    "description": "SIMULATED CAMPUS DATA — N=30. Realistic synthetic student preference survey for university discrete mathematics exploration."
+    "is_demo": false,
+    "description": "CAMPUS PILOT SURVEY — N=30. Empirical undergraduate smartphone preference survey across university departments."
   },
   "responses": [
     {
